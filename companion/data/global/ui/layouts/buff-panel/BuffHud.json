@@ -599,130 +599,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -1344,130 +1470,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -2089,130 +2341,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -2834,130 +3212,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -3579,130 +4083,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -4324,130 +4954,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -5069,130 +5825,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -5814,130 +6696,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -6559,130 +7567,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -7304,130 +8438,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -8049,130 +9309,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -8794,130 +10180,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -9539,130 +11051,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -10284,130 +11922,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -11029,130 +12793,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -11774,130 +13664,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -12519,130 +14535,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -13264,130 +15406,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -14009,130 +16277,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -14754,130 +17148,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -15499,130 +18019,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 2,
-                  "y": 2,
-                  "scale": 1.0
-                },
-                "filename": "..\\items\\invxyz",
-                "frame": 0
-              }
+                  "x": 0,
+                  "y": 0,
+                  "width": 32,
+                  "height": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 2,
+                      "y": 2,
+                      "scale": 1.0
+                    },
+                    "filename": "..\\items\\invxyz",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",

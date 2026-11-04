@@ -599,130 +599,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -1345,130 +1471,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -2091,130 +2343,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -2837,130 +3215,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -3583,130 +4087,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -4329,130 +4959,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -5075,130 +5831,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -5821,130 +6703,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -6567,130 +7575,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -7313,130 +8447,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -8059,130 +9319,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -8805,130 +10191,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -9551,130 +11063,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -10297,130 +11935,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -11043,130 +12807,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -11789,130 +13679,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -12535,130 +14551,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -13281,130 +15423,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -14027,130 +16295,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -14773,130 +17167,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
@@ -15519,130 +18039,256 @@
               ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey3",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_ey4",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g0",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g2",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_et1",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g7",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
-              "type": "ImageWidget",
+              "type": "Widget",
               "name": "Item_0g8",
               "fields": {
                 "visible": false,
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.6
-                },
-                "filename": "Items/misc/quest/scroll_of_self_resurrect",
-                "frame": 0
-              }
+                  "width": 96,
+                  "height": 96
+                }
+              },
+              "children": [
+                {
+                  "type": "ImageWidget",
+                  "name": "Picture",
+                  "fields": {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 0.6
+                    },
+                    "filename": "Items/misc/quest/scroll_of_self_resurrect",
+                    "frame": 0
+                  }
+                }
+              ]
             },
             {
               "type": "TextBoxWidget",
