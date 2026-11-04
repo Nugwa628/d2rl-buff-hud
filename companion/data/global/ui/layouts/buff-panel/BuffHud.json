@@ -14,10 +14,10 @@
       "name": "BuffGrid",
       "fields": {
         "rect": {
-          "x": -126,
-          "y": -180,
-          "width": 252,
-          "height": 108
+          "x": -182,
+          "y": -264,
+          "width": 364,
+          "height": 192
         }
       },
       "children": [
@@ -28,9 +28,9 @@
             "visible": false,
             "rect": {
               "x": 0,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -42,7 +42,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 0,
@@ -58,7 +58,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 0,
@@ -74,7 +74,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 0,
@@ -90,7 +90,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 0,
@@ -106,7 +106,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 0,
@@ -122,7 +122,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 0,
@@ -138,7 +138,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 0,
@@ -154,7 +154,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 0,
@@ -170,7 +170,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 0,
@@ -184,8 +184,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -212,8 +212,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -240,8 +240,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -268,8 +268,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -296,8 +296,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -324,8 +324,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -352,8 +352,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -380,8 +380,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -408,8 +408,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -436,8 +436,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -464,8 +464,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -492,8 +492,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -520,8 +520,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -548,8 +548,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -576,8 +576,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -774,9 +774,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -799,8 +799,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -814,10 +814,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 36,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 52,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -829,7 +829,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 2,
@@ -845,7 +845,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 2,
@@ -861,7 +861,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 2,
@@ -877,7 +877,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 2,
@@ -893,7 +893,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 2,
@@ -909,7 +909,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 2,
@@ -925,7 +925,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 2,
@@ -941,7 +941,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 2,
@@ -957,7 +957,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 2,
@@ -971,8 +971,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -999,8 +999,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1027,8 +1027,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1055,8 +1055,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1083,8 +1083,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1111,8 +1111,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1139,8 +1139,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1167,8 +1167,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1195,8 +1195,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1223,8 +1223,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1251,8 +1251,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1279,8 +1279,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1307,8 +1307,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1335,8 +1335,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1363,8 +1363,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1561,9 +1561,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -1586,8 +1586,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -1601,10 +1601,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 72,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 104,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -1616,7 +1616,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 4,
@@ -1632,7 +1632,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 4,
@@ -1648,7 +1648,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 4,
@@ -1664,7 +1664,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 4,
@@ -1680,7 +1680,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 4,
@@ -1696,7 +1696,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 4,
@@ -1712,7 +1712,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 4,
@@ -1728,7 +1728,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 4,
@@ -1744,7 +1744,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 4,
@@ -1758,8 +1758,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1786,8 +1786,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1814,8 +1814,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1842,8 +1842,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1870,8 +1870,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1898,8 +1898,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1926,8 +1926,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1954,8 +1954,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -1982,8 +1982,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2010,8 +2010,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2038,8 +2038,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2066,8 +2066,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2094,8 +2094,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2122,8 +2122,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2150,8 +2150,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2348,9 +2348,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -2373,8 +2373,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -2388,10 +2388,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 108,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 156,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -2403,7 +2403,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 6,
@@ -2419,7 +2419,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 6,
@@ -2435,7 +2435,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 6,
@@ -2451,7 +2451,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 6,
@@ -2467,7 +2467,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 6,
@@ -2483,7 +2483,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 6,
@@ -2499,7 +2499,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 6,
@@ -2515,7 +2515,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 6,
@@ -2531,7 +2531,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 6,
@@ -2545,8 +2545,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2573,8 +2573,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2601,8 +2601,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2629,8 +2629,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2657,8 +2657,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2685,8 +2685,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2713,8 +2713,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2741,8 +2741,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2769,8 +2769,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2797,8 +2797,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2825,8 +2825,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2853,8 +2853,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2881,8 +2881,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2909,8 +2909,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -2937,8 +2937,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3135,9 +3135,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -3160,8 +3160,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -3175,10 +3175,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 144,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 208,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -3190,7 +3190,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 8,
@@ -3206,7 +3206,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 8,
@@ -3222,7 +3222,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 8,
@@ -3238,7 +3238,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 8,
@@ -3254,7 +3254,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 8,
@@ -3270,7 +3270,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 8,
@@ -3286,7 +3286,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 8,
@@ -3302,7 +3302,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 8,
@@ -3318,7 +3318,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 8,
@@ -3332,8 +3332,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3360,8 +3360,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3388,8 +3388,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3416,8 +3416,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3444,8 +3444,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3472,8 +3472,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3500,8 +3500,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3528,8 +3528,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3556,8 +3556,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3584,8 +3584,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3612,8 +3612,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3640,8 +3640,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3668,8 +3668,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3696,8 +3696,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3724,8 +3724,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -3922,9 +3922,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -3947,8 +3947,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -3962,10 +3962,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 180,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 260,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -3977,7 +3977,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 10,
@@ -3993,7 +3993,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 10,
@@ -4009,7 +4009,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 10,
@@ -4025,7 +4025,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 10,
@@ -4041,7 +4041,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 10,
@@ -4057,7 +4057,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 10,
@@ -4073,7 +4073,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 10,
@@ -4089,7 +4089,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 10,
@@ -4105,7 +4105,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 10,
@@ -4119,8 +4119,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4147,8 +4147,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4175,8 +4175,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4203,8 +4203,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4231,8 +4231,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4259,8 +4259,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4287,8 +4287,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4315,8 +4315,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4343,8 +4343,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4371,8 +4371,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4399,8 +4399,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4427,8 +4427,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4455,8 +4455,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4483,8 +4483,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4511,8 +4511,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4709,9 +4709,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -4734,8 +4734,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -4749,10 +4749,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 216,
-              "y": 72,
-              "width": 32,
-              "height": 32
+              "x": 312,
+              "y": 128,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -4764,7 +4764,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 12,
@@ -4780,7 +4780,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 12,
@@ -4796,7 +4796,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 12,
@@ -4812,7 +4812,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 12,
@@ -4828,7 +4828,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 12,
@@ -4844,7 +4844,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 12,
@@ -4860,7 +4860,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 12,
@@ -4876,7 +4876,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 12,
@@ -4892,7 +4892,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 12,
@@ -4906,8 +4906,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4934,8 +4934,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4962,8 +4962,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -4990,8 +4990,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5018,8 +5018,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5046,8 +5046,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5074,8 +5074,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5102,8 +5102,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5130,8 +5130,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5158,8 +5158,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5186,8 +5186,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5214,8 +5214,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5242,8 +5242,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5270,8 +5270,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5298,8 +5298,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5496,9 +5496,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -5521,8 +5521,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -5537,9 +5537,9 @@
             "visible": false,
             "rect": {
               "x": 0,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -5551,7 +5551,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 14,
@@ -5567,7 +5567,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 14,
@@ -5583,7 +5583,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 14,
@@ -5599,7 +5599,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 14,
@@ -5615,7 +5615,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 14,
@@ -5631,7 +5631,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 14,
@@ -5647,7 +5647,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 14,
@@ -5663,7 +5663,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 14,
@@ -5679,7 +5679,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 14,
@@ -5693,8 +5693,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5721,8 +5721,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5749,8 +5749,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5777,8 +5777,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5805,8 +5805,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5833,8 +5833,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5861,8 +5861,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5889,8 +5889,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5917,8 +5917,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5945,8 +5945,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -5973,8 +5973,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6001,8 +6001,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6029,8 +6029,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6057,8 +6057,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6085,8 +6085,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6283,9 +6283,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -6308,8 +6308,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -6323,10 +6323,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 36,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 52,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -6338,7 +6338,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 16,
@@ -6354,7 +6354,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 16,
@@ -6370,7 +6370,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 16,
@@ -6386,7 +6386,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 16,
@@ -6402,7 +6402,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 16,
@@ -6418,7 +6418,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 16,
@@ -6434,7 +6434,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 16,
@@ -6450,7 +6450,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 16,
@@ -6466,7 +6466,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 16,
@@ -6480,8 +6480,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6508,8 +6508,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6536,8 +6536,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6564,8 +6564,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6592,8 +6592,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6620,8 +6620,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6648,8 +6648,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6676,8 +6676,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6704,8 +6704,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6732,8 +6732,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6760,8 +6760,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6788,8 +6788,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6816,8 +6816,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6844,8 +6844,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -6872,8 +6872,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7070,9 +7070,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -7095,8 +7095,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -7110,10 +7110,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 72,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 104,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -7125,7 +7125,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 18,
@@ -7141,7 +7141,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 18,
@@ -7157,7 +7157,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 18,
@@ -7173,7 +7173,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 18,
@@ -7189,7 +7189,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 18,
@@ -7205,7 +7205,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 18,
@@ -7221,7 +7221,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 18,
@@ -7237,7 +7237,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 18,
@@ -7253,7 +7253,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 18,
@@ -7267,8 +7267,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7295,8 +7295,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7323,8 +7323,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7351,8 +7351,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7379,8 +7379,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7407,8 +7407,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7435,8 +7435,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7463,8 +7463,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7491,8 +7491,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7519,8 +7519,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7547,8 +7547,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7575,8 +7575,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7603,8 +7603,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7631,8 +7631,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7659,8 +7659,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -7857,9 +7857,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -7882,8 +7882,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -7897,10 +7897,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 108,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 156,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -7912,7 +7912,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 20,
@@ -7928,7 +7928,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 20,
@@ -7944,7 +7944,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 20,
@@ -7960,7 +7960,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 20,
@@ -7976,7 +7976,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 20,
@@ -7992,7 +7992,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 20,
@@ -8008,7 +8008,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 20,
@@ -8024,7 +8024,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 20,
@@ -8040,7 +8040,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 20,
@@ -8054,8 +8054,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8082,8 +8082,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8110,8 +8110,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8138,8 +8138,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8166,8 +8166,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8194,8 +8194,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8222,8 +8222,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8250,8 +8250,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8278,8 +8278,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8306,8 +8306,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8334,8 +8334,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8362,8 +8362,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8390,8 +8390,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8418,8 +8418,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8446,8 +8446,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8644,9 +8644,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -8669,8 +8669,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​‌​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -8684,10 +8684,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 144,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 208,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -8699,7 +8699,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 22,
@@ -8715,7 +8715,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 22,
@@ -8731,7 +8731,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 22,
@@ -8747,7 +8747,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 22,
@@ -8763,7 +8763,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 22,
@@ -8779,7 +8779,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 22,
@@ -8795,7 +8795,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 22,
@@ -8811,7 +8811,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 22,
@@ -8827,7 +8827,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 22,
@@ -8841,8 +8841,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8869,8 +8869,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8897,8 +8897,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8925,8 +8925,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8953,8 +8953,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -8981,8 +8981,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9009,8 +9009,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9037,8 +9037,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9065,8 +9065,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9093,8 +9093,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9121,8 +9121,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9149,8 +9149,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9177,8 +9177,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9205,8 +9205,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9233,8 +9233,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9431,9 +9431,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -9456,8 +9456,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌‌​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -9471,10 +9471,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 180,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 260,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -9486,7 +9486,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 24,
@@ -9502,7 +9502,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 24,
@@ -9518,7 +9518,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 24,
@@ -9534,7 +9534,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 24,
@@ -9550,7 +9550,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 24,
@@ -9566,7 +9566,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 24,
@@ -9582,7 +9582,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 24,
@@ -9598,7 +9598,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 24,
@@ -9614,7 +9614,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 24,
@@ -9628,8 +9628,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9656,8 +9656,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9684,8 +9684,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9712,8 +9712,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9740,8 +9740,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9768,8 +9768,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9796,8 +9796,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9824,8 +9824,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9852,8 +9852,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9880,8 +9880,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9908,8 +9908,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9936,8 +9936,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9964,8 +9964,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -9992,8 +9992,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10020,8 +10020,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10218,9 +10218,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -10243,8 +10243,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -10258,10 +10258,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 216,
-              "y": 36,
-              "width": 32,
-              "height": 32
+              "x": 312,
+              "y": 64,
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -10273,7 +10273,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 26,
@@ -10289,7 +10289,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 26,
@@ -10305,7 +10305,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 26,
@@ -10321,7 +10321,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 26,
@@ -10337,7 +10337,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 26,
@@ -10353,7 +10353,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 26,
@@ -10369,7 +10369,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 26,
@@ -10385,7 +10385,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 26,
@@ -10401,7 +10401,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 26,
@@ -10415,8 +10415,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10443,8 +10443,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10471,8 +10471,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10499,8 +10499,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10527,8 +10527,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10555,8 +10555,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10583,8 +10583,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10611,8 +10611,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10639,8 +10639,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10667,8 +10667,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10695,8 +10695,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10723,8 +10723,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10751,8 +10751,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10779,8 +10779,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -10807,8 +10807,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11005,9 +11005,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -11030,8 +11030,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌​‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -11047,8 +11047,8 @@
             "rect": {
               "x": 0,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -11060,7 +11060,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 28,
@@ -11076,7 +11076,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 28,
@@ -11092,7 +11092,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 28,
@@ -11108,7 +11108,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 28,
@@ -11124,7 +11124,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 28,
@@ -11140,7 +11140,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 28,
@@ -11156,7 +11156,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 28,
@@ -11172,7 +11172,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 28,
@@ -11188,7 +11188,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 28,
@@ -11202,8 +11202,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11230,8 +11230,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11258,8 +11258,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11286,8 +11286,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11314,8 +11314,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11342,8 +11342,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11370,8 +11370,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11398,8 +11398,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11426,8 +11426,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11454,8 +11454,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11482,8 +11482,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11510,8 +11510,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11538,8 +11538,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11566,8 +11566,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11594,8 +11594,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -11792,9 +11792,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -11817,8 +11817,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -11832,10 +11832,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 36,
+              "x": 52,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -11847,7 +11847,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 30,
@@ -11863,7 +11863,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 30,
@@ -11879,7 +11879,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 30,
@@ -11895,7 +11895,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 30,
@@ -11911,7 +11911,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 30,
@@ -11927,7 +11927,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 30,
@@ -11943,7 +11943,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 30,
@@ -11959,7 +11959,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 30,
@@ -11975,7 +11975,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 30,
@@ -11989,8 +11989,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12017,8 +12017,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12045,8 +12045,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12073,8 +12073,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12101,8 +12101,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12129,8 +12129,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12157,8 +12157,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12185,8 +12185,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12213,8 +12213,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12241,8 +12241,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12269,8 +12269,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12297,8 +12297,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12325,8 +12325,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12353,8 +12353,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12381,8 +12381,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12579,9 +12579,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -12604,8 +12604,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -12619,10 +12619,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 72,
+              "x": 104,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -12634,7 +12634,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 32,
@@ -12650,7 +12650,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 32,
@@ -12666,7 +12666,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 32,
@@ -12682,7 +12682,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 32,
@@ -12698,7 +12698,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 32,
@@ -12714,7 +12714,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 32,
@@ -12730,7 +12730,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 32,
@@ -12746,7 +12746,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 32,
@@ -12762,7 +12762,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 32,
@@ -12776,8 +12776,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12804,8 +12804,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12832,8 +12832,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12860,8 +12860,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12888,8 +12888,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12916,8 +12916,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12944,8 +12944,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -12972,8 +12972,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13000,8 +13000,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13028,8 +13028,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13056,8 +13056,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13084,8 +13084,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13112,8 +13112,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13140,8 +13140,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13168,8 +13168,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13366,9 +13366,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -13391,8 +13391,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -13406,10 +13406,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 108,
+              "x": 156,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -13421,7 +13421,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 34,
@@ -13437,7 +13437,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 34,
@@ -13453,7 +13453,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 34,
@@ -13469,7 +13469,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 34,
@@ -13485,7 +13485,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 34,
@@ -13501,7 +13501,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 34,
@@ -13517,7 +13517,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 34,
@@ -13533,7 +13533,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 34,
@@ -13549,7 +13549,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 34,
@@ -13563,8 +13563,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13591,8 +13591,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13619,8 +13619,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13647,8 +13647,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13675,8 +13675,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13703,8 +13703,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13731,8 +13731,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13759,8 +13759,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13787,8 +13787,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13815,8 +13815,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13843,8 +13843,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13871,8 +13871,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13899,8 +13899,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13927,8 +13927,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -13955,8 +13955,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14153,9 +14153,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -14178,8 +14178,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌​​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -14193,10 +14193,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 144,
+              "x": 208,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -14208,7 +14208,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 36,
@@ -14224,7 +14224,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 36,
@@ -14240,7 +14240,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 36,
@@ -14256,7 +14256,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 36,
@@ -14272,7 +14272,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 36,
@@ -14288,7 +14288,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 36,
@@ -14304,7 +14304,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 36,
@@ -14320,7 +14320,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 36,
@@ -14336,7 +14336,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 36,
@@ -14350,8 +14350,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14378,8 +14378,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14406,8 +14406,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14434,8 +14434,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14462,8 +14462,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14490,8 +14490,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14518,8 +14518,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14546,8 +14546,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14574,8 +14574,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14602,8 +14602,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14630,8 +14630,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14658,8 +14658,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14686,8 +14686,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14714,8 +14714,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14742,8 +14742,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -14940,9 +14940,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -14965,8 +14965,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​‌​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -14980,10 +14980,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 180,
+              "x": 260,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -14995,7 +14995,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 38,
@@ -15011,7 +15011,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 38,
@@ -15027,7 +15027,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 38,
@@ -15043,7 +15043,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 38,
@@ -15059,7 +15059,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 38,
@@ -15075,7 +15075,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 38,
@@ -15091,7 +15091,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 38,
@@ -15107,7 +15107,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 38,
@@ -15123,7 +15123,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 38,
@@ -15137,8 +15137,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15165,8 +15165,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15193,8 +15193,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15221,8 +15221,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15249,8 +15249,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15277,8 +15277,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15305,8 +15305,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15333,8 +15333,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15361,8 +15361,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15389,8 +15389,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15417,8 +15417,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15445,8 +15445,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15473,8 +15473,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15501,8 +15501,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15529,8 +15529,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15727,9 +15727,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -15752,8 +15752,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "‌‌​​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
@@ -15767,10 +15767,10 @@
           "fields": {
             "visible": false,
             "rect": {
-              "x": 216,
+              "x": 312,
               "y": 0,
-              "width": 32,
-              "height": 32
+              "width": 48,
+              "height": 48
             }
           },
           "children": [
@@ -15782,7 +15782,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AmSkillicon",
                 "normalFrame": 40,
@@ -15798,7 +15798,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\SoSkillicon",
                 "normalFrame": 40,
@@ -15814,7 +15814,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\NeSkillicon",
                 "normalFrame": 40,
@@ -15830,7 +15830,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\PaSkillicon",
                 "normalFrame": 40,
@@ -15846,7 +15846,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\BaSkillicon",
                 "normalFrame": 40,
@@ -15862,7 +15862,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\DrSkillicon",
                 "normalFrame": 40,
@@ -15878,7 +15878,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\AsSkillicon",
                 "normalFrame": 40,
@@ -15894,7 +15894,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\WaSkillicon",
                 "normalFrame": 40,
@@ -15910,7 +15910,7 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "scale": 0.667
+                  "scale": 1.0
                 },
                 "filename": "SPELLS\\Skillicon",
                 "normalFrame": 40,
@@ -15924,8 +15924,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15952,8 +15952,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -15980,8 +15980,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16008,8 +16008,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16036,8 +16036,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16064,8 +16064,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16092,8 +16092,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16120,8 +16120,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16148,8 +16148,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16176,8 +16176,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16204,8 +16204,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16232,8 +16232,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16260,8 +16260,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16288,8 +16288,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16316,8 +16316,8 @@
               "fields": {
                 "visible": false,
                 "rect": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 8,
+                  "y": 8,
                   "width": 32,
                   "height": 32
                 }
@@ -16514,9 +16514,9 @@
                 "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
                 "fontType": "6pt",
                 "rect": {
-                  "x": -6,
-                  "y": 20,
-                  "width": 44,
+                  "x": -2,
+                  "y": 48,
+                  "width": 52,
                   "height": 14
                 },
                 "style": {
@@ -16539,8 +16539,8 @@
                 "rect": {
                   "x": 0,
                   "y": 0,
-                  "width": 32,
-                  "height": 32
+                  "width": 48,
+                  "height": 48
                 },
                 "tooltipString": "​​‌​‌​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
                 "tooltipStyle": "$TooltipStyle"
