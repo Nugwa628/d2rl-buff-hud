@@ -1,1 +1,92 @@
 state_id	icon_atlas	icon_frame	name_key	name	item_code
+14	paladin	40	mxl2012:SkillnameHmmmmm	Judgement	
+15	amazon	70	mxl2012:SkillnameWhaaWhaaWhaaa	Pounce	
+16	global	62	mxl2012:SkillnameBloodFuryZomg	Blood Fury	
+20	global	34	mxl2012:SkillnameBloodbath	Bloodbath	
+22	paladin	42	mxl2012:SkillnameEnrapt	Rapture	
+31	global	0	mxl2012:SkillnameMFlare	Elemental Fury	
+32	amazon	46	mxl2012:SkillnameMaenadFrenzy	Ecstatic Frenzy	
+33	sorceress	106	mxl2012:SkillnameFiredance	Firedance	
+34	global	62	mxl2012:SkillnameVanquish	Vanquish Female	
+35	barbarian	76	mxl2012:SkillnameNephalemWpns	Nephalem Weapons	
+38	global	6		Act Experience Bonus	
+43	paladin	84	mxl2012:SkillnameBlackstorm	Blackstorm	
+58	barbarian	34	mxl2012:SkillnameFortress	Fortress	
+63	paladin	48	mxl2012:SkillnameLaLaLaLa	Hymn	
+64	assassin	60	mxl2012:SkillnameBeacon	Beacon	
+65	barbarian	56	mxl2012:SkillnameShamansTrance	Shamanic Trance	
+66	assassin	38	mxl2012:SkillnameBroadside	Broadside	
+70	global	84	mxl2012:SkillnameLightningSh	Lightning Shield	
+75	druid	54	mxl2012:SkillnameForceofNature	Faerie Fire	
+77	amazon	58	mxl2012:SkillnameWaspSting	War Spirit	
+80	amazon	20	mxl2012:SkillnameTriStrike2	Takedown	
+81	global	0	mxl2012:SkillnameBladesOfLight	Blades Of Light	
+82	assassin	12	mxl2012:SkillnameShadowRef	Shadow Refuge	
+87	global	84	mxl2012:SkillnameLArena	Lightning Arena	
+95	global	48	mxl2012:SkillnameFeralists	Feral Strike	
+113	paladin	30	mxl2012:SkillnameIHateYou	Tainted Blood	
+116	sorceress	28	mxl2012:SkillnameNovaCharge	Nova Charge	
+119	global	78	mxl2012:SkillnamePathOfFlames	Path Of Flames	
+120	sorceress	40	mxl2012:SkillnameQQSkill	Moonstrike	
+124	necromancer	80	mxl2012:SkillnameDeathlord	Deathlord	
+125	assassin	0	mxl2012:SkillnameLethalS	Batstrike Charge	
+128	paladin	46		Armor Shrine	
+129	global	32		Combat Shrine	
+130	global	84		Lightning Resist Shrine	
+131	sorceress	106		Fire Resist Shrine	
+132	global	0		Cold Resist Shrine	
+133	druid	40		Poison Resist Shrine	
+134	global	0		Skill Shrine	
+135	barbarian	56		Mana Regeneration Shrine	
+136	paladin	6		Stamina Shrine	
+137	global	6		Experience Shrine	
+144	necromancer	54	mxl2012:SkillnameRathmaRulez	Rathmas Chosen	
+145	assassin	4	mxl2012:SkillnameBladeQ	Queen Of Blades	
+160	sorceress	114	mxl2012:SkillnameDBlade	Bane Hunter	
+161	paladin	54	mxl2012:SkillnameRob	Superbeast	
+163	necromancer	68	mxl2012:SkillnameGraveyard	Graveyard	
+178	global	0	mxl2012:SkillnameRob	Superbeast Neutral	
+180				Amazing Grace	
+190	global	0	SkillnameMetamorphosisBear	Mark Of The Bear	
+191	global	0	SkillnameMetamorphosisWolf	Mark Of The Wolf	
+198	warlock	24	BaneHexName	Hex Bane	
+200	warlock	26	SiphonHexName	Hex Siphon	
+202	warlock	32	PurgeHexName	Hex Purge	
+208	warlock	16	ConsumeName	Consume	
+211	warlock	12	EngorgeName	Engorge	
+222	global	0	skillname52	Lightning Enchant	
+223	global	0	skillname52	Cold Enchant	
+232	global	0	mxl2012:SkillnameShadowform	Shadowform	
+236	assassin	34	mxl2012:SkillnameWychwind	Wychwind	
+239	global	22	mxl2012:SkillnameTitanStrike	Titan Strike	
+240	global	0	mxl2012:SkillnameLifeblood	Lifeblood	
+241	global	0	mxl2012:0g7	Elixir of Power	0g7
+242	barbarian	56	mxl2012:et1	Elixir of Concentration	et1
+243	druid	58	mxl2012:SkillnameTritonForm	Treewarden Form	
+245	amazon	74		Healing Potion	hp5
+246	global	64	mxl2012:0g8	Elixir of Love	0g8
+247	global	64	mxl2012:SkillnameInnerFire	Inner Fire	
+248	global	20	mxl2012:SkillnameMOTW	Mark Of The Wild	
+249	global	62	mxl2012:SkillnameDarkPower	Dark Power	
+250	global	32	mxl2012:SkillnameBloodlust	Bloodlust	
+251	paladin	46	mxl2012:SkillnameGodmode	Holy Armor	
+252	global	48	mxl2012:SkillnameCautious	Cautious Strike	
+253	global	62	mxl2012:SkillnameRavenHeart	Raven Heart	
+262	global	80	mxl2012:SkillnameDemSpeed	Demonic Speed	
+263	global	62	mxl2012:SkillnameVanquish	Vanquish	
+265	global	62	mxl2012:SkillnameUnholyArmor	Unholy Armor	
+268	paladin	10	mxl2012:SkillnameArcaneStrike	Arcane Strike	
+269	barbarian	60	mxl2012:SkillnameMeBeWotan	Thundergod	
+270	amazon	10	mxl2012:SkillnameDontCrossIt	Moonbeam	
+271	global	0	vps	Stamina Potion	vps
+272	sorceress	38	mxl2012:SkillnameBzzzzzzzzzzzzz	Swarm	
+275	global	6	mxl2012:ey2	Elixir of Experience	ey2
+276	paladin	54	mxl2012:ey3	Elixir of Greed	ey3
+277	paladin	54	mxl2012:ey4	Elixir of Wealth	ey4
+280	paladin	72	mxl2012:SkillnameMerka	Merkabah	
+281	druid	30	mxl2012:SkillnameTrapRatform	Trap Rat Form	
+289	paladin	6	mxl2012:SkillnameLionheart	Lionheart	
+291	global	64	mxl2012:SkillnameBloodyMary	Bloody Mary	
+292	global	64	mxl2012:SkillnamePaganHeart	Pagan Heart	
+297	global	48	mxl2012:SkillnameHamRadio	Hamstring	
+301	global	0	mxl2012:SkillnameCowDisguise	Cow Disguise	
