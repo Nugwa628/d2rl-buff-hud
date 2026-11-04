@@ -33,6 +33,12 @@ using Internal::SkillIconDescriptor;
 constexpr std::size_t SlotCount = Core::MaximumDisplayedBuffs;
 constexpr std::size_t AtlasCount = 9;
 constexpr std::size_t ItemCodeBytes = 8;
+// Item_<code> pictures of the companion layouts. The game does not apply a
+// layout's "visible": false, and widgets cannot be enumerated, so these and
+// every item_code of buff-hud-display.txt are hidden by name.
+constexpr std::array<const char*, 15> LayoutItemCodes{
+    "hp1", "hp2", "hp3", "hp4", "hp5", "mp1", "mp2", "mp3", "mp4", "mp5", "rvs", "rvl", "vps", "yps", "wms",
+};
 constexpr std::uint32_t FramesPerSecond = 25;
 constexpr char TimerReserve[] = "__BUFF_PANEL_TIMER_RESERVE_00__";
 constexpr std::size_t TimerReserveBytes = sizeof(TimerReserve);
@@ -136,6 +142,7 @@ bool HandlesResolved{};
 // UI reloads; a different or missing pointer means all cached widget state is stale.
 void* ResolvedNativePanel{};
 std::uint32_t PollsWithoutPanel{};
+std::uint64_t HiddenItemGeneration{std::numeric_limits<std::uint64_t>::max()};
 std::uint64_t LastRenderedRevision{std::numeric_limits<std::uint64_t>::max()};
 
 [[nodiscard]] std::size_t AtlasIndex(Core::BuffIconAtlas atlas) noexcept {
@@ -270,6 +277,32 @@ void MakeTooltipReserveUtf16(std::size_t slotIndex, std::array<std::uint16_t, To
 [[nodiscard]] bool SetEnabled(D2RL::Widgets::WidgetHandle handle, bool enabled) noexcept;
 [[nodiscard]] bool ApplyInputIsolation() noexcept;
 
+void HideItemPicture(D2RL::Widgets::WidgetHandle slot, const char* code) noexcept {
+    char widgetName[16]{};
+    std::snprintf(widgetName, sizeof(widgetName), "Item_%s", code);
+    D2RL::Widgets::WidgetHandle item{D2RL::Widgets::InvalidHandle};
+    if (Widgets->findWidget(Context, slot, widgetName, &item) == D2RL::Widgets::Result::Success) {
+        (void)SetVisible(item, false);
+    }
+}
+
+// Hides every known Item_ picture of every slot, then lets RenderSnapshot
+// re-apply the pictures of occupied slots.
+void HideItemPictures() noexcept {
+    const auto generation = Core::BuffPresentations().Generation();
+    const auto tableCodes = Core::BuffPresentations().ItemCodes();
+    for (std::size_t i = 0; i < Handles.size(); ++i) {
+        auto& slot = Handles[i];
+        if (slot.slot == D2RL::Widgets::InvalidHandle) continue;
+        for (const auto* code : LayoutItemCodes) HideItemPicture(slot.slot, code);
+        for (const auto& code : tableCodes) HideItemPicture(slot.slot, code.c_str());
+        slot.item = D2RL::Widgets::InvalidHandle;
+        RenderStates[i].visible = false;
+    }
+    HiddenItemGeneration = generation;
+    LastRenderedRevision = std::numeric_limits<std::uint64_t>::max();
+}
+
 [[nodiscard]] bool ResolveWidgetHandles() noexcept {
     if (HandlesResolved) return true;
     if (Context == nullptr || Widgets == nullptr) return false;
@@ -325,6 +358,7 @@ void MakeTooltipReserveUtf16(std::size_t slotIndex, std::array<std::uint16_t, To
 
     HandlesResolved = true;
     ResolvedNativePanel = nativePanel;
+    HideItemPictures();
     (void)ApplyInputIsolation();
     return true;
 }
@@ -970,6 +1004,8 @@ void OpenPanel() noexcept;
 
 void RenderSnapshot() noexcept {
     if (!EnsureLivePanel()) return;
+    // A table reload can name item codes the last pass did not hide.
+    if (Core::BuffPresentations().Generation() != HiddenItemGeneration) HideItemPictures();
 
     auto snapshot = Core::BuffDisplays().Snapshot();
     std::uint32_t nowFrame{};
