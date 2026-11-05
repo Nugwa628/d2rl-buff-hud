@@ -17,6 +17,8 @@ std::string Stripped(std::string text) {
 
 int main() {
     assert(Stripped("\xC3\xBF" "c1Elixir of Power") == "Elixir of Power");
+    assert(Stripped("\xEE\x81\xBE" "1Elixir of Power") == "Elixir of Power");
+    assert(Stripped("\xEE\x81\xBE") == "");
     assert(Stripped("\xFF" "c4Gold") == "Gold");
     assert(Stripped("Holy \xC3\xBF" "c3Armor\xC3\xBF" "c0") == "Holy Armor");
     assert(Stripped("Vessel of Judgement") == "Vessel of Judgement");
