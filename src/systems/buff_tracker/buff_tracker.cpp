@@ -4,6 +4,7 @@
 
 #include "core/buff_display_bus.hpp"
 #include "core/buff_presentation.hpp"
+#include "core/display_text.hpp"
 #include "core/services.hpp"
 #include "core/stat_read_bus.hpp"
 #include "core/stat_list_post_bus.hpp"
@@ -365,7 +366,8 @@ template <typename T>
         return false;
     }
     output.assign(buffer.data());
-    return output.find('\n') == std::string::npos && output.find('\r') == std::string::npos;
+    Core::StripColourCodes(output);
+    return !output.empty() && output.find('\n') == std::string::npos && output.find('\r') == std::string::npos;
 }
 
 // buff-hud-display.txt is presentation only: a missing or invalid table clears
