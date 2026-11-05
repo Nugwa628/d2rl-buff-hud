@@ -147,6 +147,10 @@ if(BUFF_PANEL_BUILD_TESTS)
     target_include_directories(tooltip_text_test PRIVATE src)
     target_compile_features(tooltip_text_test PRIVATE cxx_std_20)
     add_test(NAME tooltip_text COMMAND tooltip_text_test)
+    add_executable(panel_overlap_test tests/panel_overlap_test.cpp)
+    target_include_directories(panel_overlap_test PRIVATE src)
+    target_compile_features(panel_overlap_test PRIVATE cxx_std_20)
+    add_test(NAME panel_overlap COMMAND panel_overlap_test)
     add_executable(tooltip_binding_test tests/tooltip_binding_test.cpp
         src/core/services.cpp src/core/buff_display_bus.cpp src/core/buff_presentation.cpp
         src/systems/buff_hud/skill_icon_resolver.cpp src/systems/buff_hud/icon_frame_backend.cpp)

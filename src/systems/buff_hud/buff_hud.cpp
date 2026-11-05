@@ -5,6 +5,7 @@
 #include "core/buff_presentation.hpp"
 #include "core/services.hpp"
 #include "icon_frame_backend.hpp"
+#include "panel_overlap.hpp"
 #include "native/native_contract.hpp"
 #include "skill_icon_resolver.hpp"
 
@@ -55,35 +56,42 @@ constexpr char PanelName[] = "buff-panel/BuffHud";
 // While the panel is missing (D2R is rebuilding its UI), ask D2RLoader to open it
 // again at most this often instead of on every UI poll.
 constexpr std::uint32_t ReopenPollInterval = 30;
-// Big native panels the icons hide behind while one is open (hide_with_panels).
-// The icons sit centred above the skill bar; these panels reach that spot in
-// legacy graphics (stash, cube) or take the screen anyway (vendor, trade). The
-// inventory and character panels do not hide them: a player fights with those
-// open.
-constexpr std::array<const char*, 5> HidingPanels{
+// hide_with_panels. The stash and the Horadric Cube hide the icons whenever
+// one is open (owner, 2026-11-05: in legacy graphics the icons cover the
+// stash's corner and its close button).
+constexpr std::array<const char*, 3> HidingPanels{
     "BankExpansionLayout",
     "BankOriginalLayout",
     "HoradricCubeLayout",
-    "VendorPanelLayout",
-    "TradeLayout",
 };
-// Further native panel names `buff-panel panels` reports (diagnostics only;
-// they do not hide the icons).
-constexpr std::array<const char*, 14> ProbedPanels{
-    "PlayerInventoryExpansionLayout",
-    "PlayerInventoryOriginalLayout",
-    "CharacterStatsPanel",
+// Side panels hide them only while an occupied slot overlaps the panel: a
+// player fights with the inventory or the character panel open. In legacy
+// graphics a left panel always reaches the first slot; a right panel the
+// sixth or seventh. In HD only the top row reaches a right panel.
+struct SidePanel final {
+    const char* name;
+    Internal::PanelSide side;
+};
+constexpr std::array<SidePanel, 12> SidePanels{{
+    {"CharacterStatsPanel", Internal::PanelSide::Left},
+    {"QuestLogPanelExpansion", Internal::PanelSide::Left},
+    {"QuestLogPanelOriginal", Internal::PanelSide::Left},
+    {"WaypointsPanelExpansion", Internal::PanelSide::Left},
+    {"WaypointsPanelOriginal", Internal::PanelSide::Left},
+    {"VendorPanelLayout", Internal::PanelSide::Left},
+    {"TradeLayout", Internal::PanelSide::Left},
+    {"HirelingInventoryPanel", Internal::PanelSide::Left},
+    {"PartyPanel", Internal::PanelSide::Left},
+    {"PlayerInventoryExpansionLayout", Internal::PanelSide::Right},
+    {"PlayerInventoryOriginalLayout", Internal::PanelSide::Right},
+    {"SkillsTreePanel", Internal::PanelSide::Right},
+}};
+// Further native panel names `buff-panel panels` reports (diagnostics only).
+constexpr std::array<const char*, 4> ProbedPanels{
     "AdvancedStatsPanel",
-    "SkillsTreePanel",
-    "WaypointsPanelExpansion",
-    "WaypointsPanelOriginal",
-    "QuestLogPanelExpansion",
-    "QuestLogPanelOriginal",
-    "HirelingInventoryPanel",
     "HireablesPanel",
     "ImbueItemsPanel",
     "NpcDialogPanel",
-    "PartyPanel",
 };
 
 enum class TooltipStorageEncoding : std::uint8_t {
@@ -1411,13 +1419,61 @@ void OpenPanel() noexcept;
     return ((*flag & VisibleFlagMask) != 0) == VisibleFlagSetWhenShown;
 }
 
-// The first HidingPanels entry the game has open, or null. A panel counts as
-// open when it exists and its own visibility bit says shown.
+[[nodiscard]] bool IsNativePanelOpen(const char* name) noexcept {
+    return IsNativeShown(FindTopLevelPanel(name));
+}
+
+// True when an occupied slot's box on the UI screen overlaps the side panel.
+// Same grid origin as the hover names (UpdateHoverNamePresentation).
+[[nodiscard]] bool OccupiedSlotOverlaps(Internal::PanelSide side) noexcept {
+    HWND window = GameWindow();
+    RECT client{};
+    if (window == nullptr || !GetClientRect(window, &client)) return false;
+    const auto clientWidth = client.right - client.left;
+    const auto clientHeight = client.bottom - client.top;
+    if (clientWidth <= 0 || clientHeight <= 0) return false;
+
+    D2RL::Widgets::Rect rootRect{};
+    D2RL::Widgets::Rect grid{};
+    if (Widgets->getWidgetRect(Context, HudPanel, &rootRect) != D2RL::Widgets::Result::Success
+        || Widgets->getWidgetRect(Context, GridWidget, &grid) != D2RL::Widgets::Result::Success) {
+        return false;
+    }
+    if ((rootRect.width <= 0 || rootRect.height <= 0) && !GameUiScreen(clientWidth, clientHeight, rootRect)) {
+        return false;
+    }
+    D2RL::Widgets::Rect space{};
+    const bool hd = UiSpaceWidget != D2RL::Widgets::InvalidHandle
+        && Widgets->getWidgetRect(Context, UiSpaceWidget, &space) == D2RL::Widgets::Result::Success
+        && space.height > 0;
+    const bool resolved = grid.x >= 0 && grid.y >= 0
+        && grid.x + grid.width <= rootRect.width && grid.y + grid.height <= rootRect.height;
+    const double gridLeft = resolved ? grid.x : rootRect.width * 0.5 + grid.x;
+    const double gridTop = resolved ? grid.y : static_cast<double>(rootRect.height) + grid.y;
+    const auto panel = Internal::SidePanelBox(side, rootRect.width, rootRect.height, hd);
+
+    for (std::size_t i = 0; i < Handles.size(); ++i) {
+        if (!RenderStates[i].visible) continue;
+        D2RL::Widgets::Rect slot{};
+        if (Widgets->getWidgetRect(Context, Handles[i].slot, &slot) != D2RL::Widgets::Result::Success) continue;
+        const Internal::UiBox box{gridLeft + slot.x, gridTop + slot.y,
+                                  gridLeft + slot.x + slot.width, gridTop + slot.y + slot.height};
+        if (Internal::Overlaps(box, panel)) return true;
+    }
+    return false;
+}
+
+// The open native panel the icons hide for, or null: a HidingPanels entry, or
+// a SidePanels entry an occupied slot overlaps. A panel counts as open when it
+// exists and its own visibility bit says shown.
 [[nodiscard]] const char* OpenHidingPanel() noexcept {
     // HideItemPictures qualifies the bit on the first render.
-    if (FindTopLevelPanel == nullptr || !VisibleFlagQualified) return nullptr;
+    if (FindTopLevelPanel == nullptr || !VisibleFlagQualified || Widgets == nullptr) return nullptr;
     for (const auto* name : HidingPanels) {
-        if (IsNativeShown(FindTopLevelPanel(name))) return name;
+        if (IsNativePanelOpen(name)) return name;
+    }
+    for (const auto& panel : SidePanels) {
+        if (IsNativePanelOpen(panel.name) && OccupiedSlotOverlaps(panel.side)) return panel.name;
     }
     return nullptr;
 }
@@ -1433,16 +1489,6 @@ void ApplyHudShown(bool shown) noexcept {
 
 void RenderSnapshot() noexcept {
     if (!EnsureLivePanel()) return;
-    const char* hiding = HideWithPanels ? OpenHidingPanel() : nullptr;
-    if (hiding != HidingPanel && Context != nullptr) {
-        char line[160]{};
-        std::snprintf(line, sizeof(line), hiding != nullptr
-            ? "Buff HUD: %s is open; icons hidden."
-            : "Buff HUD: %s closed; icons shown again.", hiding != nullptr ? hiding : HidingPanel);
-        Context->LogInfo(line);
-    }
-    HidingPanel = hiding;
-    ApplyHudShown(hiding == nullptr);
     // A table reload can name item codes the last pass did not hide.
     if (Core::BuffPresentations().Generation() != HiddenItemGeneration) HideItemPictures();
 
@@ -1491,6 +1537,17 @@ void RenderSnapshot() noexcept {
     }
     for (std::size_t i = visibleCount; i < SlotCount; ++i) HideSlot(i);
 
+    const char* hiding = HideWithPanels ? OpenHidingPanel() : nullptr;
+    if (hiding != HidingPanel && Context != nullptr) {
+        char line[160]{};
+        std::snprintf(line, sizeof(line), hiding != nullptr
+            ? "Buff HUD: %s is open over the icons; icons hidden."
+            : "Buff HUD: %s closed or clear of the icons; icons shown again.",
+            hiding != nullptr ? hiding : HidingPanel);
+        Context->LogInfo(line);
+    }
+    HidingPanel = hiding;
+    ApplyHudShown(hiding == nullptr);
     if (hiding == nullptr) {
         UpdateHoverNamePresentation();
     } else {
@@ -1692,6 +1749,7 @@ void PrintPanels(const D2RL::PluginContext* context, std::string_view names) noe
     };
     if (names.empty()) {
         for (const auto* name : HidingPanels) add(name, true);
+        for (const auto& panel : SidePanels) add(panel.name, false);
         for (const auto* name : ProbedPanels) add(name, false);
     } else {
         for (std::size_t at = 0; at < names.size();) {

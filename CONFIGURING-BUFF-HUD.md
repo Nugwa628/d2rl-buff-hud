@@ -98,6 +98,15 @@ D2RLoader writes the plugin's default settings to `d2rloader\config\buff-panel.t
 ```toml
 [buff_panel]
 enabled = true
+hide_with_panels = true
 ```
 
 Set `enabled = false` and start the game again: the plugin still loads, but shows no panel and installs nothing.
+
+`hide_with_panels = true` (the default; a file without the key keeps it) hides the icons while the stash or the Horadric
+Cube is open, in HD and legacy graphics, and shows them again when it closes. A side panel (character, quests, waypoints,
+a vendor, trade, the mercenary, the party; inventory, skill tree) hides them only while it overlaps an icon on screen: in
+legacy graphics a left panel always does, a right panel from the sixth or seventh icon; in HD only the top row reaches a
+right panel. So a player can fight with the inventory open. `false` keeps them shown always. `buff-panel status` reports `hiddenBy=<panel>`;
+`buff-panel panels [Name ...]` lists which native panels exist and are shown (the visibility bit is the one learned for
+item pictures above: with `visibleFlag=not-qualified` nothing hides).
