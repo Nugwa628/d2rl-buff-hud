@@ -30,11 +30,11 @@ constexpr D2RL::PluginInfo Info{
 
 bool Started{};
 
-[[nodiscard]] bool ConfigEnabled(const D2RL::PluginContext* context) noexcept {
+[[nodiscard]] Core::PluginConfig ReadPluginConfig(const D2RL::PluginContext* context) noexcept {
     char text[1024]{};
     std::uint32_t required{};
-    if (!context->ReadConfig(text, sizeof(text), &required)) return true;
-    return Core::ParsePluginConfig(text).enabled;
+    if (!context->ReadConfig(text, sizeof(text), &required)) return {};
+    return Core::ParsePluginConfig(text);
 }
 
 void ShutdownRuntime() noexcept {
@@ -58,13 +58,14 @@ D2RL_PLUGIN_EXPORT bool __cdecl D2RLoaderLoadPlugin(
     const D2RL::PluginContext* context) noexcept {
     using namespace BuffPanel;
     if (context == nullptr) return false;
-    if (!ConfigEnabled(context)) {
+    const auto config = ReadPluginConfig(context);
+    if (!config.enabled) {
         context->LogInfo("Buff HUD: enabled = false in buff-panel.toml; no panel, nothing installed.");
         return true;
     }
     if (!Core::InitializeServices(context)) return false;
     Started = true;
-    if (!Systems::BuffHud::Initialize(context)) {
+    if (!Systems::BuffHud::Initialize(context, config)) {
         ShutdownRuntime();
         return false;
     }

@@ -55,6 +55,36 @@ constexpr char PanelName[] = "buff-panel/BuffHud";
 // While the panel is missing (D2R is rebuilding its UI), ask D2RLoader to open it
 // again at most this often instead of on every UI poll.
 constexpr std::uint32_t ReopenPollInterval = 30;
+// Big native panels the icons hide behind while one is open (hide_with_panels).
+// The icons sit centred above the skill bar; these panels reach that spot in
+// legacy graphics (stash, cube) or take the screen anyway (vendor, trade). The
+// inventory and character panels do not hide them: a player fights with those
+// open.
+constexpr std::array<const char*, 5> HidingPanels{
+    "BankExpansionLayout",
+    "BankOriginalLayout",
+    "HoradricCubeLayout",
+    "VendorPanelLayout",
+    "TradeLayout",
+};
+// Further native panel names `buff-panel panels` reports (diagnostics only;
+// they do not hide the icons).
+constexpr std::array<const char*, 14> ProbedPanels{
+    "PlayerInventoryExpansionLayout",
+    "PlayerInventoryOriginalLayout",
+    "CharacterStatsPanel",
+    "AdvancedStatsPanel",
+    "SkillsTreePanel",
+    "WaypointsPanelExpansion",
+    "WaypointsPanelOriginal",
+    "QuestLogPanelExpansion",
+    "QuestLogPanelOriginal",
+    "HirelingInventoryPanel",
+    "HireablesPanel",
+    "ImbueItemsPanel",
+    "NpcDialogPanel",
+    "PartyPanel",
+};
 
 enum class TooltipStorageEncoding : std::uint8_t {
     Unknown = 0,
@@ -169,6 +199,12 @@ std::uint8_t VisibleFlagMask{};
 bool VisibleFlagSetWhenShown{};
 std::uint64_t LastRenderedRevision{std::numeric_limits<std::uint64_t>::max()};
 bool HoverGeometryLogged{};
+bool HideWithPanels{true};
+// The open panel the icons are hidden for, or null. HudShownApplied is the last
+// visibility given to HudPanel while HudShownKnown (reset with the handles).
+const char* HidingPanel{};
+bool HudShownKnown{};
+bool HudShownApplied{};
 
 [[nodiscard]] std::size_t AtlasIndex(Core::BuffIconAtlas atlas) noexcept {
     for (std::size_t i = 0; i < AtlasOrder.size(); ++i) {
@@ -529,6 +565,7 @@ void InvalidateWidgetHandles() noexcept {
     Handles = {};
     RenderStates = {};
     HandlesResolved = false;
+    HudShownKnown = false;
     LastRenderedRevision = std::numeric_limits<std::uint64_t>::max();
 }
 
@@ -1365,8 +1402,47 @@ void OpenPanel() noexcept;
     return true;
 }
 
+// Reads the visibility bit QualifyVisibleFlag learned on a native widget. false
+// when the bit is unknown or the widget's memory is not readable.
+[[nodiscard]] bool IsNativeShown(const void* widget) noexcept {
+    if (!VisibleFlagQualified || widget == nullptr) return false;
+    const auto* flag = static_cast<const std::uint8_t*>(widget) + VisibleFlagOffset;
+    if (!IsReadableRange(flag, 1)) return false;
+    return ((*flag & VisibleFlagMask) != 0) == VisibleFlagSetWhenShown;
+}
+
+// The first HidingPanels entry the game has open, or null. A panel counts as
+// open when it exists and its own visibility bit says shown.
+[[nodiscard]] const char* OpenHidingPanel() noexcept {
+    // HideItemPictures qualifies the bit on the first render.
+    if (FindTopLevelPanel == nullptr || !VisibleFlagQualified) return nullptr;
+    for (const auto* name : HidingPanels) {
+        if (IsNativeShown(FindTopLevelPanel(name))) return name;
+    }
+    return nullptr;
+}
+
+// Shows or hides the whole BuffHud panel; calls the WidgetService only when the
+// wanted state changes or the panel was rebuilt.
+void ApplyHudShown(bool shown) noexcept {
+    if (HudShownKnown && HudShownApplied == shown) return;
+    if (!SetVisible(HudPanel, shown)) return;
+    HudShownKnown = true;
+    HudShownApplied = shown;
+}
+
 void RenderSnapshot() noexcept {
     if (!EnsureLivePanel()) return;
+    const char* hiding = HideWithPanels ? OpenHidingPanel() : nullptr;
+    if (hiding != HidingPanel && Context != nullptr) {
+        char line[160]{};
+        std::snprintf(line, sizeof(line), hiding != nullptr
+            ? "Buff HUD: %s is open; icons hidden."
+            : "Buff HUD: %s closed; icons shown again.", hiding != nullptr ? hiding : HidingPanel);
+        Context->LogInfo(line);
+    }
+    HidingPanel = hiding;
+    ApplyHudShown(hiding == nullptr);
     // A table reload can name item codes the last pass did not hide.
     if (Core::BuffPresentations().Generation() != HiddenItemGeneration) HideItemPictures();
 
@@ -1415,7 +1491,11 @@ void RenderSnapshot() noexcept {
     }
     for (std::size_t i = visibleCount; i < SlotCount; ++i) HideSlot(i);
 
-    UpdateHoverNamePresentation();
+    if (hiding == nullptr) {
+        UpdateHoverNamePresentation();
+    } else {
+        ClearHoverOverlay();
+    }
     LastRenderedRevision = snapshot.revision;
 }
 
@@ -1581,11 +1661,13 @@ void PrintStatus(const D2RL::PluginContext* context) noexcept {
     }
     char line[640]{};
     std::snprintf(line, sizeof(line),
-        "Buff HUD 1.1.0: displayed=%zu/%zu session=%llu frame=%u panel=%s companion=enabled skillIcons=%s skillNames=%s tableRevision=%llu hoverLabels=click-through hover=\"%s\".",
+        "Buff HUD 1.1.0: displayed=%zu/%zu session=%llu frame=%u panel=%s hideWithPanels=%s hiddenBy=%s companion=enabled skillIcons=%s skillNames=%s tableRevision=%llu hoverLabels=click-through hover=\"%s\".",
         snapshot.count, SlotCount,
         static_cast<unsigned long long>(snapshot.sessionGeneration),
         snapshot.currentGameFrame,
         RegisteredPanel != D2RL::Panels::InvalidHandle ? "registered" : "missing",
+        HideWithPanels ? "on" : "off",
+        HidingPanel != nullptr ? HidingPanel : "none",
         icons.ready ? "ready" : "not-qualified",
         icons.namesReady ? "ready" : "not-qualified",
         static_cast<unsigned long long>(icons.tableRevision),
@@ -1593,6 +1675,36 @@ void PrintStatus(const D2RL::PluginContext* context) noexcept {
     context->WriteConsoleMessage(line);
     // The console panel is not always open (or not readable): the log keeps it.
     context->LogInfo(line);
+}
+
+// `buff-panel panels [Name ...]`: for each native panel name (the hiding and
+// probed lists, or the names given) whether it exists and is shown.
+void PrintPanels(const D2RL::PluginContext* context, std::string_view names) noexcept {
+    if (context == nullptr) return;
+    std::string line = "Buff HUD panels:";
+    auto add = [&](std::string_view name, bool hides) {
+        const std::string text(name);
+        void* panel = FindTopLevelPanel != nullptr ? FindTopLevelPanel(text.c_str()) : nullptr;
+        line += ' ';
+        line += text;
+        line += panel == nullptr ? "=missing" : IsNativeShown(panel) ? "=shown" : "=hidden";
+        if (hides) line += "(hides)";
+    };
+    if (names.empty()) {
+        for (const auto* name : HidingPanels) add(name, true);
+        for (const auto* name : ProbedPanels) add(name, false);
+    } else {
+        for (std::size_t at = 0; at < names.size();) {
+            const auto start = names.find_first_not_of(" \t\r\n", at);
+            if (start == std::string_view::npos) break;
+            const auto end = std::min(names.find_first_of(" \t\r\n", start), names.size());
+            add(names.substr(start, end - start), false);
+            at = end;
+        }
+    }
+    line += VisibleFlagQualified ? " visibleFlag=qualified" : " visibleFlag=not-qualified";
+    context->WriteConsoleMessage(line.c_str());
+    context->LogInfo(line.c_str());
 }
 
 D2RL::ConsoleCommandResult __cdecl BuffCommand(
@@ -1605,10 +1717,14 @@ D2RL::ConsoleCommandResult __cdecl BuffCommand(
         PrintStatus(command->plugin); return D2RL::ConsoleCommandResult::Handled;
     }
     const auto last = args.find_last_not_of(" \t\r\n");
-    if (args.substr(first, last - first + 1) == "status") {
+    const auto trimmed = args.substr(first, last - first + 1);
+    if (trimmed == "status") {
         PrintStatus(command->plugin); return D2RL::ConsoleCommandResult::Handled;
     }
-    command->plugin->WriteConsoleMessage("Usage: buff-panel [status]");
+    if (trimmed.substr(0, 6) == "panels" && (trimmed.size() == 6 || trimmed[6] == ' ' || trimmed[6] == '\t')) {
+        PrintPanels(command->plugin, trimmed.substr(6)); return D2RL::ConsoleCommandResult::Handled;
+    }
+    command->plugin->WriteConsoleMessage("Usage: buff-panel [status | panels [Name ...]]");
     return D2RL::ConsoleCommandResult::InvalidArguments;
 }
 
@@ -1711,10 +1827,11 @@ D2RL::ConsoleCommandResult __cdecl BuffCommand(
 
 } // namespace
 
-bool Initialize(const D2RL::PluginContext* context) noexcept {
+bool Initialize(const D2RL::PluginContext* context, const Core::PluginConfig& config) noexcept {
     Shutdown();
     if (context == nullptr) return false;
     Context = context;
+    HideWithPanels = config.hideWithPanels;
 
     const auto& services = Core::Services();
     Panels = services.panels;
@@ -1769,7 +1886,7 @@ bool Initialize(const D2RL::PluginContext* context) noexcept {
     if (!Context->RegisterConsoleCommand(
             "buff-panel",
             &BuffCommand,
-            "Show Buff HUD status.")) {
+            "Show Buff HUD status; 'buff-panel panels' lists the native panels that hide it.")) {
         Context->LogWarn("Buff HUD: console command 'buff-panel' could not be registered.");
     }
     Context->LogInfo(
@@ -1798,6 +1915,7 @@ void Shutdown() noexcept {
     RestoreQualifiedTooltipBuffers();
     InvalidateWidgetHandles();
     PollsWithoutPanel = 0;
+    HidingPanel = nullptr;
 
     RegisteredPanel = D2RL::Panels::InvalidHandle;
     DataTablesListener = D2RL::Lifecycle::InvalidHandle;

@@ -21,6 +21,14 @@ int main() {
     check(ParsePluginConfig("[buff_panel]\nenabled = no\n").enabled, "a bad value keeps the default");
     check(ParsePluginConfig("[buff_panel]\nenabled_x = false\n").enabled, "another key does not count");
     check(ParsePluginConfig("enabled = false\n").enabled, "a key outside any section does not count");
+    check(ParsePluginConfig(nullptr).hideWithPanels, "no config hides the icons with big panels");
+    check(ParsePluginConfig("[buff_panel]\nenabled = true\n").hideWithPanels, "an old config keeps the default");
+    check(!ParsePluginConfig("[buff_panel]\nhide_with_panels = false\n").hideWithPanels, "hide_with_panels = false");
+    check(ParsePluginConfig("[buff_panel]\nhide_with_panels = false\n").enabled, "hide_with_panels leaves enabled alone");
+    check(!ParsePluginConfig("[buff_panel]\nenabled = false\nhide_with_panels = true\n").enabled,
+        "enabled = false next to hide_with_panels");
+    check(ParsePluginConfig("[buff_panel]\nhide_with_panels = 0\n").hideWithPanels, "a bad hide value keeps the default");
+    check(ParsePluginConfig("[other]\nhide_with_panels = false\n").hideWithPanels, "hide_with_panels in another section");
     if (failures == 0) std::printf("PASS: plugin config\n");
     return failures == 0 ? 0 : 1;
 }

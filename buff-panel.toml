@@ -3,3 +3,5 @@
 [buff_panel]
 # false: the plugin loads but shows no panel and installs nothing
 enabled = true
+# true: the icons hide while the stash, the Horadric Cube or another big game panel is open, and come back when it closes
+hide_with_panels = true
