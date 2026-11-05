@@ -1,0 +1,5 @@
+# Buff HUD (buff-panel): a panel of the player's timed buffs above the skill bar, with timers and the buff's name on
+# hover. Changes apply at the next game start.
+[buff_panel]
+# false: the plugin loads but shows no panel and installs nothing
+enabled = true

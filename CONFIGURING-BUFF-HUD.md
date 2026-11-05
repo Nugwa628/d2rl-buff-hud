@@ -89,3 +89,15 @@ native widgets. It learns the native visibility bit once by toggling a slot's
 `Countdown` through the WidgetService. The log line `item pictures found=... hidden=...
 visibleFlag=...` reports the result; if the bit is not qualified, slots keep their skill icons
 (the pictures then cannot be hidden either).
+
+## buff-panel.toml — turning the panel off
+
+D2RLoader writes the plugin's default settings to `d2rloader\config\buff-panel.toml` (next to the plugin's own
+`d2rloader` folder: the game folder, or the mod folder for a mod-scoped install) the first time it loads:
+
+```toml
+[buff_panel]
+enabled = true
+```
+
+Set `enabled = false` and start the game again: the plugin still loads, but shows no panel and installs nothing.

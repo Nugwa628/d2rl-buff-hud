@@ -52,6 +52,10 @@ target_link_libraries(buff_panel PRIVATE ${BUFF_PANEL_SDK_TARGET})
 target_compile_features(buff_panel PRIVATE cxx_std_20)
 target_compile_definitions(buff_panel PRIVATE NOMINMAX WIN32_LEAN_AND_MEAN)
 target_compile_options(buff_panel PRIVATE /W4 /permissive- /utf-8 /EHsc)
+# buff-panel.toml: D2RLoader writes this default into <scope>\d2rloader\config\ when it is missing.
+if(COMMAND d2rlplugin_embed_config)
+    d2rlplugin_embed_config(TARGET buff_panel FILE "${CMAKE_CURRENT_SOURCE_DIR}/buff-panel.toml")
+endif()
 set_target_properties(buff_panel PROPERTIES
     OUTPUT_NAME "d2rl-buff-panel"
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/stage/$<CONFIG>/d2rloader/plugins"
@@ -126,6 +130,10 @@ if(BUFF_PANEL_BUILD_TESTS)
                 "${CMAKE_CURRENT_SOURCE_DIR}/src/systems/buff_hud/buff_hud.cpp" "${BUFF_PANEL_DISPLAY_TABLE}"
                 "${BUFF_PANEL_LAYOUT}" "${BUFF_PANEL_LEGACY_LAYOUT}")
     endif()
+    add_executable(plugin_config_test tests/plugin_config_test.cpp)
+    target_include_directories(plugin_config_test PRIVATE src)
+    target_compile_features(plugin_config_test PRIVATE cxx_std_20)
+    add_test(NAME plugin_config COMMAND plugin_config_test)
     add_executable(timer_metadata_test tests/timer_metadata_test.cpp)
     target_include_directories(timer_metadata_test PRIVATE src)
     target_compile_features(timer_metadata_test PRIVATE cxx_std_20)
