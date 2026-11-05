@@ -34,9 +34,9 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 129	global	32		Combat Shrine	
 130	global	84		Lightning Resist Shrine	
 131	sorceress	106		Fire Resist Shrine	
-132	global	0		Cold Resist Shrine	
+132	global	70		Cold Resist Shrine	
 133	druid	40		Poison Resist Shrine	
-134	global	0		Skill Shrine	
+134	global	2		Skill Shrine	
 135	barbarian	56		Mana Regeneration Shrine	
 136	paladin	6		Stamina Shrine	
 137	global	6		Experience Shrine	
