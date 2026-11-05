@@ -4,7 +4,7 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 16	global	62	mxl2012:SkillnameBloodFuryZomg	Blood Fury	
 20	global	34	mxl2012:SkillnameBloodbath	Bloodbath	
 22	paladin	42	mxl2012:SkillnameEnrapt	Rapture	
-31	global	0	mxl2012:SkillnameMFlare	Elemental Fury	
+31	druid	20	mxl2012:SkillnameMFlare	Elemental Fury	
 32	amazon	46	mxl2012:SkillnameMaenadFrenzy	Ecstatic Frenzy	
 33	sorceress	106	mxl2012:SkillnameFiredance	Firedance	
 34	global	62	mxl2012:SkillnameVanquish	Vanquish Female	
@@ -20,7 +20,7 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 75	druid	54	mxl2012:SkillnameForceofNature	Faerie Fire	
 77	amazon	58	mxl2012:SkillnameWaspSting	War Spirit	
 80	amazon	20	mxl2012:SkillnameTriStrike2	Takedown	
-81	global	0	mxl2012:SkillnameBladesOfLight	Blades Of Light	
+81	sorceress	56	mxl2012:SkillnameBladesOfLight	Blades Of Light	
 82	assassin	12	mxl2012:SkillnameShadowRef	Shadow Refuge	
 87	global	84	mxl2012:SkillnameLArena	Lightning Arena	
 95	global	48	mxl2012:SkillnameFeralists	Feral Strike	
@@ -45,10 +45,10 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 160	sorceress	114	mxl2012:SkillnameDBlade	Bane Hunter	
 161	paladin	54	mxl2012:SkillnameRob	Superbeast	
 163	necromancer	68	mxl2012:SkillnameGraveyard	Graveyard	
-178	global	0	mxl2012:SkillnameRob	Superbeast Neutral	
+178	paladin	54	mxl2012:SkillnameRob	Superbeast Neutral	
 180				Amazing Grace	
-190	global	0	SkillnameMetamorphosisBear	Mark Of The Bear	
-191	global	0	SkillnameMetamorphosisWolf	Mark Of The Wolf	
+190	druid	50	SkillnameMetamorphosisBear	Mark Of The Bear	
+191	druid	6	SkillnameMetamorphosisWolf	Mark Of The Wolf	
 198	warlock	24	BaneHexName	Hex Bane	
 200	warlock	26	SiphonHexName	Hex Siphon	
 202	warlock	32	PurgeHexName	Hex Purge	
