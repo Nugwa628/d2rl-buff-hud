@@ -54,12 +54,12 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 202	warlock	32	PurgeHexName	Hex Purge	
 208	warlock	16	ConsumeName	Consume	
 211	warlock	12	EngorgeName	Engorge	
-222	global	0	skillname52	Lightning Enchant	
-223	global	0	skillname52	Cold Enchant	
-232	global	0	mxl2012:SkillnameShadowform	Shadowform	
+222	global	76		Lightning Enchant	
+223	global	70		Cold Enchant	
+232	sorceress	94	mxl2012:SkillnameShadowform	Shadowform	
 236	assassin	34	mxl2012:SkillnameWychwind	Wychwind	
 239	global	22	mxl2012:SkillnameTitanStrike	Titan Strike	
-240	global	0	mxl2012:SkillnameLifeblood	Lifeblood	
+240	paladin	74	mxl2012:SkillnameLifeblood	Lifeblood	
 241	global	0	mxl2012:0g7	Elixir of Power	0g7
 242	barbarian	56	mxl2012:et1	Elixir of Concentration	et1
 243	druid	58	mxl2012:SkillnameTritonForm	Treewarden Form	
@@ -89,4 +89,4 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 291	global	64	mxl2012:SkillnameBloodyMary	Bloody Mary	
 292	global	64	mxl2012:SkillnamePaganHeart	Pagan Heart	
 297	global	48	mxl2012:SkillnameHamRadio	Hamstring	
-301	global	0	mxl2012:SkillnameCowDisguise	Cow Disguise	
+301	global	104	mxl2012:SkillnameCowDisguise	Cow Disguise	
