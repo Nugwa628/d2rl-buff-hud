@@ -46,5 +46,16 @@ int main() {
     auto renewed = orders;
     renewed.expireFrameFloat = 18000;
     assert(ResolveTimer(renewed, 32, 149, 15792, skill, expiry) && expiry == 18000);
+    // Debuffs: curse-flagged lists and lists without a skill keep their deadline.
+    const TimerMetadata curse{0x20u, 60, 16000.0F, 0};
+    assert(ResolveDebuffExpiry(curse, 60, 15000) == 16000);
+    assert(ResolveDebuffExpiry(curse, 61, 15000) == 0);
+    assert(ResolveDebuffExpiry(curse, 60, 16000) == 0);
+    const TimerMetadata noDeadline{0x20u, 2, 0.0F, 0};
+    assert(ResolveDebuffExpiry(noDeadline, 2, 15000) == 0);
+    const TimerMetadata fraction{0u, 2, 16000.5F, 0};
+    assert(ResolveDebuffExpiry(fraction, 2, 15000) == 0);
+    // A curse list is still never a buff timer.
+    assert(!ResolveTimer(curse, 60, 87, 15000, skill, expiry));
     std::cout << "PASS: CTA fallback, native attribution, expiry and rejection guards; no skillLevel dependency\n";
 }

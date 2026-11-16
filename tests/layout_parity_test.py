@@ -45,11 +45,10 @@ for path, node in hd_nodes.items():
         assert node["type"] == "Widget" and node["fields"].get("visible") is False, path
         assert [c["type"] for c in node.get("children", [])] == ["ImageWidget"], path
 
-# No slot may draw into another: each slot's box and its Countdown stay apart.
-# Legacy DC6 skill icons draw at their own 48 px whatever their "scale", so the
-# legacy slot box must hold a full icon.
-def footprints(layout):
-    grid = next(c for c in layout["children"] if c["name"] == "BuffGrid")
+# No slot may draw into another: each slot's box and its Countdown stay apart,
+# in the buff group and in the debuff group.
+def footprints(layout, grid_name):
+    grid = next(c for c in layout["children"] if c["name"] == grid_name)
     for slot in grid["children"]:
         r = slot["fields"]["rect"]
         boxes = [(r["x"], r["y"], r["width"], r["height"])]
@@ -65,13 +64,36 @@ def overlaps(a, b):
 
 
 for name, layout in (("HD", hd), ("legacy", legacy)):
-    slots = list(footprints(layout))
-    for i, (first, first_boxes) in enumerate(slots):
-        for second, second_boxes in slots[i + 1:]:
-            assert not any(overlaps(a, b) for a in first_boxes for b in second_boxes), \
-                f"{name}: {first} overlaps {second}"
+    for grid_name in ("BuffGrid", "DebuffGrid"):
+        slots = list(footprints(layout, grid_name))
+        for i, (first, first_boxes) in enumerate(slots):
+            for second, second_boxes in slots[i + 1:]:
+                overlap = any(overlaps(a, b) for a in first_boxes for b in second_boxes)
+                assert not overlap, f"{name}: {first} overlaps {second}"
+
+SMALL = "d2rloader" + chr(92) + "buff-panel" + chr(92) + "small" + chr(92)
+# Legacy DC6 pictures draw at their own size whatever their "scale", so the
+# half-size legacy panel uses the companion's own half-size sheets (24 px icons).
 for path, node in legacy_nodes.items():
     if node["name"].startswith("Icon"):
         slot = legacy_nodes[path.rsplit("/", 1)[0]]["fields"]["rect"]
-        assert slot["width"] >= 48 and slot["height"] >= 48, f"{path}: legacy slot smaller than a 48 px icon"
+        assert node["fields"]["filename"].startswith(SMALL), path
+        assert slot["width"] >= 24 and slot["height"] >= 24, f"{path}: legacy slot smaller than a 24 px icon"
+    if node["name"] == "Picture":
+        assert node["fields"]["filename"].startswith(SMALL), path
+
+# The debuff group: 14 slots of icons, a red Frame and a Countdown each, filled
+# from the right (the mana globe side); the buff group fills from the left.
+for name, layout in (("HD", hd), ("legacy", legacy)):
+    buffs = next(c for c in layout["children"] if c["name"] == "BuffGrid")["children"]
+    debuffs = next(c for c in layout["children"] if c["name"] == "DebuffGrid")["children"]
+    assert [s["name"] for s in debuffs] == [f"DebuffSlot{k:02d}" for k in range(14)], name
+    for slot in debuffs:
+        kids = [c["name"] for c in slot["children"]]
+        assert kids[-2:] == ["Frame", "Countdown"] and len(kids) == 11, f"{name}: {slot['name']}"
+    assert debuffs[0]["fields"]["rect"]["x"] > debuffs[1]["fields"]["rect"]["x"], f"{name}: debuffs fill from the right"
+    assert buffs[0]["fields"]["rect"]["x"] < buffs[1]["fields"]["rect"]["x"], f"{name}: buffs fill from the left"
+    label = layout["children"][-1]
+    assert label["name"] == "HoverName" and label["type"] == "TextBoxWidget", f"{name}: HoverName must be drawn last"
+    assert label["fields"]["text"].startswith("__BUFF_PANEL_NAME_RESERVE_") and len(label["fields"]["text"]) == 63, name
 print("PASS: legacy layout matches the HD widget contract")

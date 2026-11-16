@@ -48,6 +48,9 @@ struct BuffDisplayEntry final {
     std::uint16_t stacks{1};
     std::int16_t priority{};
     std::uint64_t sequence{};
+    // A harmful state on the player (curse, poison, chill, ...): shown in the
+    // debuff group with a red frame instead of with the buffs.
+    bool debuff{};
 };
 
 struct BuffDisplaySnapshot final {

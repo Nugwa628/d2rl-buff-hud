@@ -24,6 +24,16 @@ For `display_type=timer`:
 
 For `display_type=resource`, `value_stat`, `max_stat`, and `skill_id` are required as before.
 
+For `display_type=debuff` (a harmful state on the player: a curse, poison, freezing, ...):
+- `value_stat`, `max_stat`, and `value_shift` must be `0`; `skill_id` (0 to 4095) only picks the icon and name when
+  `buff-hud-display.txt` has none for the state.
+- The icon shows while the player has the state, in the debuff group by the mana globe with a red frame. The time left
+  shows when the game gives the state an end; curses and auras without one show no timer.
+
+```text
+debuff_amplify_damage	9	debuff	0	0	0	0	1
+```
+
 The embedded defaults include:
 
 ```text
@@ -90,7 +100,7 @@ native widgets. It learns the native visibility bit once by toggling a slot's
 visibleFlag=...` reports the result; if the bit is not qualified, slots keep their skill icons
 (the pictures then cannot be hidden either).
 
-## buff-panel.toml — turning the panel off
+## buff-panel.toml — turning the panel off, moving the icons
 
 D2RLoader writes the plugin's default settings to `d2rloader\config\buff-panel.toml` (next to the plugin's own
 `d2rloader` folder: the game folder, or the mod folder for a mod-scoped install) the first time it loads:
@@ -99,6 +109,16 @@ D2RLoader writes the plugin's default settings to `d2rloader\config\buff-panel.t
 [buff_panel]
 enabled = true
 hide_with_panels = true
+hd_buffs_x = -1
+hd_buffs_y = -1
+hd_debuffs_x = -1
+hd_debuffs_y = -1
+legacy_buffs_x = -1
+legacy_buffs_y = -1
+legacy_debuffs_x = -1
+legacy_debuffs_y = -1
+reset_buffs = false
+reset_debuffs = false
 ```
 
 Set `enabled = false` and start the game again: the plugin still loads, but shows no panel and installs nothing.
@@ -110,3 +130,18 @@ legacy graphics a left panel always does, a right panel from the sixth or sevent
 right panel. So a player can fight with the inventory open. `false` keeps them shown always. `buff-panel status` reports `hiddenBy=<panel>`;
 `buff-panel panels [Name ...]` lists which native panels exist and are shown (the visibility bit is the one learned for
 item pictures above: with `visibleFlag=not-qualified` nothing hides).
+
+### Moving the icons
+
+Buffs start by the life globe and fill from there; debuffs start by the mana globe. Hold **Left Ctrl** and drag any
+icon with the left mouse button to move its group; the click does not reach the game, so the character does not walk.
+Each group keeps its own spot, once for HD and once for legacy graphics: `hd_buffs_x` / `hd_buffs_y` and so on hold
+the group's top-left corner as a share of the screen (0 to 1), written when you let go. A group always stays wholly on
+the screen, also after a change of resolution. `-1` means the default spot by the globe.
+
+To put a group back: set `reset_buffs = true` or `reset_debuffs = true` (the next game start moves it back in HD and
+legacy and writes the key back as `false`), or type `buff-panel reset` in the console (`buff-panel reset buffs` or
+`buff-panel reset debuffs` for one group).
+
+`buff-panel status` shows the saved spots (`saved(...)`), where the groups are now (`grids(...)`), the shown debuffs
+(`debuffNames=`) and the name under the mouse (`hover=`).

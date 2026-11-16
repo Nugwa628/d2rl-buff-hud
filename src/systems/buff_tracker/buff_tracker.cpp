@@ -37,7 +37,9 @@ using GetStatListFromUnitAndStateFn = void*(__fastcall*)(void* unit, std::int32_
 
 // StatList semantic field layout is runtime-qualified on D2R build 93847. buff-hud.txt is the authoritative whitelist and
 // also declares how each state is presented: finite timer or resource pool.
-// Native CURSE lists remain excluded as a safety boundary. Timer rows require
+// Native CURSE lists stay out of the buff rows; "debuff" rows read them (and
+// lists without a source skill) only through the attached-state lookup, with the
+// same readable-range checks. Timer rows require
 // finite future expiry metadata. Native skill ID is preferred; timer skill_id
 // is an optional fallback when the StatList exposes skill=0. skillLevel is not
 // used for qualification. Resource rows read their current/max values through
@@ -76,6 +78,7 @@ struct BuffDefinition final {
     std::int32_t maxStatId{};
     std::int32_t sourceSkillId{};
     std::uint8_t valueShift{};
+    bool debuff{};
 };
 
 struct WhitelistCache final {
@@ -318,6 +321,11 @@ template <typename T>
             if (row.valueStat != 0 || row.maxStat != 0 || row.skillId > 4095 || row.valueShift != 0) return {};
             definition.displayMode = Core::BuffDisplayMode::Timer;
             definition.sourceSkillId = static_cast<std::int32_t>(row.skillId);
+        } else if (displayType == "debuff") {
+            if (row.valueStat != 0 || row.maxStat != 0 || row.skillId > 4095 || row.valueShift != 0) return {};
+            definition.displayMode = Core::BuffDisplayMode::Timer;
+            definition.sourceSkillId = static_cast<std::int32_t>(row.skillId);
+            definition.debuff = true;
         } else if (displayType == "resource") {
             if (row.valueStat == 0 || row.maxStat == 0 || row.skillId == 0
                 || row.valueStat > 4095 || row.maxStat > 4095 || row.skillId > 4095
@@ -775,7 +783,7 @@ void DiscoverAttachedTimers(std::uint32_t currentFrame) noexcept {
 
     auto snapshot = Core::BuffDisplays().Snapshot();
     for (const auto& definition : cache->definitions) {
-        if (definition.displayMode != Core::BuffDisplayMode::Timer) continue;
+        if (definition.displayMode != Core::BuffDisplayMode::Timer || definition.debuff) continue;
         const auto state = definition.stateId;
         auto* nativeState = GetStatListFromUnitAndState(player, static_cast<std::int32_t>(state));
         if (nativeState == nullptr) continue;
@@ -829,6 +837,71 @@ void DiscoverAttachedTimers(std::uint32_t currentFrame) noexcept {
     }
 }
 
+[[nodiscard]] std::uint64_t DebuffKey(std::uint32_t state) noexcept {
+    std::uint64_t hash = 14695981039346656037ULL;
+    constexpr char tag[] = "buff-panel:debuff";
+    for (const unsigned char ch : tag) {
+        if (ch == 0) break;
+        hash ^= ch;
+        hash *= 1099511628211ULL;
+    }
+    for (unsigned shift = 0; shift < 32; shift += 8) {
+        hash ^= static_cast<std::uint8_t>(state >> shift);
+        hash *= 1099511628211ULL;
+    }
+    return hash == 0 ? 1 : hash;
+}
+
+// Debuff rows follow the attached state every frame: shown while the player
+// has it (with its deadline when the list carries one), removed when it goes.
+void RefreshDebuffs(std::uint32_t currentFrame) noexcept {
+    auto* player = AuthoritativePlayer.load(std::memory_order_acquire);
+    const auto cache = Whitelist.load(std::memory_order_acquire);
+    if (player == nullptr || GetStatListFromUnitAndState == nullptr || cache == nullptr || currentFrame == 0) return;
+    if (GetStatListFromUnitAndState(player, SharedStashProxyState) != nullptr) return;
+
+    const auto snapshot = Core::BuffDisplays().Snapshot();
+    auto published = [&](std::uint64_t key) noexcept -> const Core::BuffDisplayEntry* {
+        for (std::size_t i = 0; i < snapshot.count; ++i) {
+            if (snapshot.entries[i].key == key) return &snapshot.entries[i];
+        }
+        return nullptr;
+    };
+    for (const auto& definition : cache->definitions) {
+        if (!definition.debuff) continue;
+        const auto state = definition.stateId;
+        const auto key = DebuffKey(state);
+        const auto* current = published(key);
+        void* nativeState = GetStatListFromUnitAndState(player, static_cast<std::int32_t>(state));
+        if (nativeState == nullptr) {
+            if (current != nullptr) (void)Core::BuffDisplays().Remove(key);
+            continue;
+        }
+        NativeTimerMetadata metadata{};
+        std::uint32_t expiry{};
+        if (IsReadableRange(nativeState, Native::Contract::StatListBuffMetadataBytes)
+            && ReadField(nativeState, Native::Contract::StatListBuffFlagsOffset, metadata)) {
+            expiry = Internal::ResolveDebuffExpiry(metadata, state, currentFrame);
+        }
+        std::int32_t skill = definition.sourceSkillId > 0 ? definition.sourceSkillId : Core::NoSourceSkillId;
+        if (skill == Core::NoSourceSkillId && metadata.skill != 0 && metadata.skill <= 4095) {
+            skill = static_cast<std::int32_t>(metadata.skill);
+        }
+        if (current != nullptr && current->expireGameFrame == expiry && current->sourceSkillId == skill) continue;
+        Core::BuffDisplayEntry entry{};
+        entry.key = key;
+        entry.stateId = state;
+        entry.sourceSkillId = skill;
+        entry.displayMode = Core::BuffDisplayMode::Timer;
+        entry.expireGameFrame = expiry;
+        entry.stacks = 1;
+        entry.priority = 100;
+        entry.debuff = true;
+        ApplyPresentation(entry);
+        (void)Core::BuffDisplays().Upsert(entry);
+    }
+}
+
 void QueueFramePump() noexcept;
 
 void __cdecl FramePumpOnGameThread(const D2RL::PluginContext* context, void*) noexcept {
@@ -844,6 +917,7 @@ void __cdecl FramePumpOnGameThread(const D2RL::PluginContext* context, void*) no
         RefreshResourceBuffs();
         RefreshTimerPresence(frame);
         DiscoverAttachedTimers(frame);
+        RefreshDebuffs(frame);
         QueueFramePump();
     }
 }
@@ -925,11 +999,7 @@ void OnStatListPost(
 
     const auto cache = Whitelist.load(std::memory_order_acquire);
     const auto* definition = FindBuffDefinition(cache, state);
-    if (definition == nullptr) {
-        if (phase == Core::StatListPostPhase::BeforeNative) {
-        }
-        return;
-    }
+    if (definition == nullptr || definition->debuff) return;
     if ((flags & StatListCurseFlag) != 0) {
         if (phase == Core::StatListPostPhase::BeforeNative) {
         }
@@ -1153,7 +1223,7 @@ bool Initialize(const D2RL::PluginContext* context) noexcept {
         return false;
     }
     Context->LogInfo(
-        "Buff HUD 1.1.0 BuffTracker initialized: companion whitelist tracking with native skill attribution, configured skill fallback, exact-state lifetime checks, and finite native expiry validation.");
+        "Buff HUD 1.2.0 BuffTracker initialized: companion whitelist tracking with native skill attribution, configured skill fallback, exact-state lifetime checks, and finite native expiry validation.");
     return true;
 }
 

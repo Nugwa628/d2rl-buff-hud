@@ -1,7 +1,21 @@
-# Buff HUD (buff-panel): a panel of the player's timed buffs above the skill bar, with timers and the buff's name on
-# hover. Changes apply at the next game start.
+# Buff HUD (buff-panel): the player's timed buffs by the life globe and the harmful effects (curses, poison, ...)
+# in red frames by the mana globe, with timers and the name on hover. Changes apply at the next game start.
 [buff_panel]
 # false: the plugin loads but shows no panel and installs nothing
 enabled = true
 # true: the icons hide while the stash, the Horadric Cube or another big game panel is open, and come back when it closes
 hide_with_panels = true
+# Where each group sits, saved when you move it with Left Ctrl + drag on its icons: the top-left corner as a
+# fraction of the screen (0 to 1), once for HD and once for legacy graphics. -1 means the default spot by the globe.
+hd_buffs_x = -1
+hd_buffs_y = -1
+hd_debuffs_x = -1
+hd_debuffs_y = -1
+legacy_buffs_x = -1
+legacy_buffs_y = -1
+legacy_debuffs_x = -1
+legacy_debuffs_y = -1
+# true: put that group back by its globe (HD and legacy) at the next game start; the plugin sets it back to false.
+# The console command "buff-panel reset" (or "buff-panel reset buffs" / "buff-panel reset debuffs") does it at once.
+reset_buffs = false
+reset_debuffs = false

@@ -14,6 +14,7 @@
 #include <D2RLPlugin/localization.h>
 
 #include <algorithm>
+#include <cmath>
 #include <array>
 #include <atomic>
 #include <cstddef>
@@ -32,7 +33,21 @@ namespace {
 using Internal::IconFrameBackendState;
 using Internal::SkillIconDescriptor;
 
-constexpr std::size_t SlotCount = Core::MaximumDisplayedBuffs;
+// Slots 0..20 are the buff group (BuffGrid/BuffSlotNN, driven through the
+// WidgetService), slots 21..34 the debuff group (DebuffGrid/DebuffSlotNN,
+// driven on the native widgets: D2RLoader's widget handle table has no room
+// for a second group).
+constexpr std::size_t BuffSlotCount = Core::MaximumDisplayedBuffs;
+constexpr std::size_t DebuffSlotCount = 14;
+constexpr std::size_t SlotCount = BuffSlotCount + DebuffSlotCount;
+constexpr std::size_t BuffGroup = 0;
+constexpr std::size_t DebuffGroup = 1;
+constexpr std::size_t GroupCount = 2;
+constexpr std::array<const char*, GroupCount> GroupNames{"buffs", "debuffs"};
+constexpr std::array<const char*, GroupCount> GridNames{"BuffGrid", "DebuffGrid"};
+// Saved positions per graphics mode: 0 legacy, 1 HD.
+constexpr std::size_t ModeCount = 2;
+constexpr std::array<const char*, ModeCount> ModeNames{"legacy", "hd"};
 constexpr std::size_t AtlasCount = 9;
 constexpr std::size_t ItemCodeBytes = 8;
 // Item_<code> pictures of the companion layouts. The game does not apply a
@@ -100,6 +115,11 @@ enum class TooltipStorageEncoding : std::uint8_t {
     BlizzardUtf16 = 2,
 };
 static_assert(TimerReserveBytes == 32);
+// The text of the HoverName TextBoxWidget: a name up to 63 bytes is written
+// over it (the game keeps the reserve's buffer).
+constexpr char NameReserve[] = "__BUFF_PANEL_NAME_RESERVE______________________________________";
+constexpr std::size_t NameReserveBytes = sizeof(NameReserve);
+static_assert(NameReserveBytes == 64);
 
 constexpr std::array<Core::BuffIconAtlas, AtlasCount> AtlasOrder{
     Core::BuffIconAtlas::Amazon,
@@ -127,31 +147,25 @@ constexpr std::array<const char*, AtlasCount> AtlasWidgetNames{
 
 using FindTopLevelPanelFn = void*(__fastcall*)(const char* name) noexcept;
 using FindChildWidgetByNameFn = void*(__fastcall*)(void* parent, const char* name) noexcept;
+using WidgetSetVisibleFn = void(__fastcall*)(void* widget, bool visible) noexcept;
+using WidgetSetCoordinateFn = void(__fastcall*)(void* widget, std::int32_t value) noexcept;
 
 const D2RL::PluginContext* Context{};
 const D2RL::PanelService* Panels{};
 const D2RL::WidgetService* Widgets{};
-const D2RL::OverlayService* Overlay{};
 const D2RL::ThreadService* Threads{};
 const D2RL::LifecycleService* Lifecycle{};
 D2RL::Panels::RegistrationHandle RegisteredPanel{D2RL::Panels::InvalidHandle};
 D2RL::Lifecycle::ListenerHandle DataTablesListener{D2RL::Lifecycle::InvalidHandle};
 std::array<D2RL::Lifecycle::ListenerHandle, 3> GameplayListeners{};
-D2RL::Overlay::CallbackHandle HoverOverlayCallback{D2RL::Overlay::InvalidCallbackHandle};
-
-struct HoverOverlayState final {
-    bool visible{};
-    float normalizedX{};
-    float normalizedY{};
-    std::array<char, HoverTextBytes> text{};
-};
-
-std::mutex HoverOverlayMutex{};
-HoverOverlayState HoverOverlay{};
-
 
 FindTopLevelPanelFn FindTopLevelPanel{};
 FindChildWidgetByNameFn FindChildWidgetByName{};
+// Native widget setters; null when their fingerprint does not match, which
+// switches the debuff group, the hover label and moving off.
+WidgetSetVisibleFn NativeSetVisibleFn{};
+WidgetSetCoordinateFn NativeSetXFn{};
+WidgetSetCoordinateFn NativeSetYFn{};
 
 std::atomic<std::uint64_t> CurrentSessionGeneration{};
 std::atomic<bool> PollScheduled{};
@@ -191,9 +205,88 @@ D2RL::Widgets::WidgetHandle GridWidget{D2RL::Widgets::InvalidHandle};
 // The hidden "UiSpace" widget of a layout names the height of the UI space it
 // is authored in (HD: 2160); 0 means the classic screen.
 D2RL::Widgets::WidgetHandle UiSpaceWidget{D2RL::Widgets::InvalidHandle};
-std::array<SlotHandles, SlotCount> Handles{};
+std::array<SlotHandles, BuffSlotCount> Handles{};
 std::array<SlotRenderState, SlotCount> RenderStates{};
 bool HandlesResolved{};
+
+// Native widgets of the live panel, looked up once per panel instance.
+struct NativeSlot final {
+    void* slot{};
+    std::array<void*, AtlasCount> icons{};
+    void* countdown{};
+};
+std::array<NativeSlot, SlotCount> NativeSlots{};
+std::array<void*, GroupCount> NativeGrids{};
+void* NativeHoverName{};
+bool DebuffsReady{};
+
+// The native enabled bit, learned like the visible bit (QualifyEnabledFlag).
+bool EnabledFlagQualified{};
+std::size_t EnabledFlagOffset{};
+std::uint8_t EnabledFlagMask{};
+bool EnabledFlagSetWhenEnabled{};
+
+// The hover label: its qualified text buffer and what it shows.
+std::uintptr_t QualifiedNameBuffer{};
+bool HoverNameShown{};
+std::array<char, NameReserveBytes> HoverNameText{};
+
+// Group positions. PositionMutex guards SavedPositions, Drag and Hits: the
+// game window's message procedure (drag) and the UI poll (apply, save) share them.
+std::mutex PositionMutex{};
+std::array<std::array<Core::PanelPosition, GroupCount>, ModeCount> SavedPositions{};
+bool SaveRequested{};
+// The JSON spot of each grid (its local x/y), read from the first panel of a mode.
+struct GroupDefault final {
+    bool known{};
+    std::int32_t x{};
+    std::int32_t y{};
+};
+std::array<std::array<GroupDefault, GroupCount>, ModeCount> GroupDefaults{};
+
+// Where the UI screen sits in the game window's client area.
+struct UiFrame final {
+    bool valid{};
+    bool hd{};
+    double width{};
+    double height{};
+    double scaleX{};
+    double scaleY{};
+    double left{};
+};
+
+// One group on the UI screen: its grid's top-left and the boxes of its
+// occupied slots (UI units).
+struct GroupHit final {
+    bool valid{};
+    double left{};
+    double top{};
+    double width{};
+    double height{};
+    std::size_t count{};
+    std::array<Internal::UiBox, BuffSlotCount> slots{};
+    std::array<std::size_t, BuffSlotCount> slotIndex{};
+};
+
+struct HitSnapshot final {
+    bool valid{};
+    UiFrame frame{};
+    std::array<GroupHit, GroupCount> groups{};
+};
+HitSnapshot Hits{};
+
+struct DragState final {
+    bool active{};
+    std::size_t group{};
+    std::size_t mode{};
+    double grabX{};
+    double grabY{};
+};
+DragState Drag{};
+std::atomic<std::uint64_t> DragsCompleted{};
+
+HWND SubclassedWindow{};
+WNDPROC PreviousWndProc{};
 // Native BuffHud panel the handles and qualified buffers belong to. D2R
 // destroys and rebuilds every UI panel when the graphics mode changes (G) or the
 // UI reloads; a different or missing pointer means all cached widget state is stale.
@@ -397,6 +490,96 @@ void MakeTooltipReserveUtf16(std::size_t slotIndex, std::array<std::uint16_t, To
     return true;
 }
 
+// The enabled bit, learned the same way from Countdown 0 through the
+// WidgetService's setWidgetEnabled. A disabled widget is no mouse target, so
+// the debuff group and the hover label, which have no handles, use it.
+[[nodiscard]] bool QualifyEnabledFlag() noexcept {
+    if (EnabledFlagQualified) return true;
+    const auto countdown = Handles[0].countdown;
+    const auto* native = static_cast<const std::uint8_t*>(ResolveNativeSlotChild(0, "Countdown"));
+    if (native == nullptr || !IsReadableRange(native, VisibleFlagScanBytes)) return false;
+
+    std::array<std::uint8_t, VisibleFlagScanBytes> enabled{};
+    std::array<std::uint8_t, VisibleFlagScanBytes> disabled{};
+    std::array<std::uint8_t, VisibleFlagScanBytes> enabledAgain{};
+    if (!SetEnabled(countdown, true)) return false;
+    std::memcpy(enabled.data(), native, enabled.size());
+    const bool disabledSet = SetEnabled(countdown, false);
+    std::memcpy(disabled.data(), native, disabled.size());
+    const bool enabledSet = SetEnabled(countdown, true);
+    std::memcpy(enabledAgain.data(), native, enabledAgain.size());
+    (void)SetEnabled(countdown, false);
+    if (!disabledSet || !enabledSet) return false;
+
+    std::size_t candidates = 0;
+    for (std::size_t offset = 0; offset < enabled.size(); ++offset) {
+        const auto difference = static_cast<std::uint8_t>(enabled[offset] ^ disabled[offset]);
+        if (enabled[offset] != enabledAgain[offset] || difference == 0) continue;
+        if ((difference & (difference - 1)) != 0) return false;
+        ++candidates;
+        EnabledFlagOffset = offset;
+        EnabledFlagMask = difference;
+        EnabledFlagSetWhenEnabled = (enabled[offset] & difference) != 0;
+    }
+    EnabledFlagQualified = candidates == 1;
+    return EnabledFlagQualified;
+}
+
+[[nodiscard]] bool SetNativeEnabled(void* widget, bool enabledState) noexcept {
+    if (!EnabledFlagQualified || widget == nullptr) return false;
+    auto* flag = static_cast<std::uint8_t*>(widget) + EnabledFlagOffset;
+    if (!IsWritableRange(flag, 1)) return false;
+    *flag = enabledState == EnabledFlagSetWhenEnabled
+        ? static_cast<std::uint8_t>(*flag | EnabledFlagMask)
+        : static_cast<std::uint8_t>(*flag & ~EnabledFlagMask);
+    return true;
+}
+
+// Shows or hides a native widget through the game's own setter (which also
+// runs the widget's show / hide method), else through the visible bit.
+[[nodiscard]] bool NativeShow(void* widget, bool visible) noexcept {
+    if (widget == nullptr) return false;
+    if (NativeSetVisibleFn != nullptr) {
+        if (!IsWritableRange(widget, 0x80)) return false;
+        NativeSetVisibleFn(widget, visible);
+        return true;
+    }
+    return SetNativeVisible(widget, visible);
+}
+
+struct NativeRect final {
+    std::int32_t x{};
+    std::int32_t y{};
+    std::int32_t width{};
+    std::int32_t height{};
+};
+
+[[nodiscard]] bool ReadNativeRect(const void* widget, NativeRect& rect) noexcept {
+    return ReadNativeField(widget, Native::Contract::WidgetLocalRectOffset, rect);
+}
+
+// The anchor of a widget in its parent, two floats at +0x48.
+[[nodiscard]] bool ReadNativeAnchor(const void* widget, float& x, float& y) noexcept {
+    constexpr std::size_t AnchorOffset = 0x48;
+    if (!ReadNativeField(widget, AnchorOffset, x) || !ReadNativeField(widget, AnchorOffset + 4, y)) return false;
+    return x >= 0.0F && x <= 1.0F && y >= 0.0F && y <= 1.0F;
+}
+
+// Moves a widget to local (x, y) in its parent; only for widgets that do not
+// fit their parent (the grids and the hover label).
+[[nodiscard]] bool NativeMove(void* widget, std::int32_t x, std::int32_t y) noexcept {
+    constexpr std::size_t FitToParentOffset = 0x52;
+    NativeRect rect{};
+    std::uint8_t fitsParent{1};
+    if (NativeSetXFn == nullptr || NativeSetYFn == nullptr || !ReadNativeRect(widget, rect)
+        || !ReadNativeField(widget, FitToParentOffset, fitsParent) || fitsParent != 0) {
+        return false;
+    }
+    if (rect.x != x) NativeSetXFn(widget, x);
+    if (rect.y != y) NativeSetYFn(widget, y);
+    return true;
+}
+
 // Shows or hides an Item_<code> container together with its Picture.
 [[nodiscard]] bool SetItemPictureVisible(void* item, bool visible) noexcept {
     void* picture = item != nullptr ? FindChildWidgetByName(item, "Picture") : nullptr;
@@ -441,6 +624,89 @@ void HideItemPictures() noexcept {
     }
     HiddenItemGeneration = generation;
     LastRenderedRevision = std::numeric_limits<std::uint64_t>::max();
+}
+
+// HD layouts name their UI space height in the hidden UiSpace widget; legacy
+// ones leave it 0.
+[[nodiscard]] bool IsHdLayout() noexcept {
+    D2RL::Widgets::Rect space{};
+    return UiSpaceWidget != D2RL::Widgets::InvalidHandle && Widgets != nullptr
+        && Widgets->getWidgetRect(Context, UiSpaceWidget, &space) == D2RL::Widgets::Result::Success
+        && space.height > 0;
+}
+
+// Looks up the native widgets of both groups and the hover label, and keeps
+// each grid's JSON spot as its mode's default the first time it is seen.
+void ResolveNativeTree(void* panel) noexcept {
+    NativeSlots = {};
+    NativeGrids = {};
+    NativeHoverName = nullptr;
+    DebuffsReady = false;
+    if (panel == nullptr || FindChildWidgetByName == nullptr) return;
+    for (std::size_t group = 0; group < GroupCount; ++group) {
+        NativeGrids[group] = FindChildWidgetByName(panel, GridNames[group]);
+    }
+    NativeHoverName = FindChildWidgetByName(panel, "HoverName");
+    bool debuffsComplete = NativeGrids[DebuffGroup] != nullptr;
+    for (std::size_t i = 0; i < SlotCount; ++i) {
+        auto& native = NativeSlots[i];
+        native.slot = ResolveNativeSlot(i);
+        if (native.slot != nullptr) {
+            for (std::size_t atlas = 0; atlas < AtlasCount; ++atlas) {
+                native.icons[atlas] = FindChildWidgetByName(native.slot, AtlasWidgetNames[atlas]);
+            }
+            native.countdown = FindChildWidgetByName(native.slot, "Countdown");
+        }
+        if (i >= BuffSlotCount) {
+            debuffsComplete = debuffsComplete && native.slot != nullptr && native.countdown != nullptr
+                && std::find(native.icons.begin(), native.icons.end(), nullptr) == native.icons.end();
+        }
+    }
+    DebuffsReady = debuffsComplete && NativeSetVisibleFn != nullptr;
+
+    const std::size_t mode = IsHdLayout() ? 1 : 0;
+    std::lock_guard lock(PositionMutex);
+    for (std::size_t group = 0; group < GroupCount; ++group) {
+        NativeRect rect{};
+        auto& known = GroupDefaults[mode][group];
+        if (!known.known && ReadNativeRect(NativeGrids[group], rect)) {
+            known = {.known = true, .x = rect.x, .y = rect.y};
+        }
+    }
+}
+
+// The debuff group and the hover label have no WidgetService handles: keep
+// every one of their widgets disabled (no mouse target) and hidden until used.
+void IsolateNativeWidgets() noexcept {
+    const bool qualified = QualifyEnabledFlag();
+    std::size_t disabled = 0;
+    std::size_t total = 0;
+    auto isolate = [&](void* widget) noexcept {
+        if (widget == nullptr) return;
+        ++total;
+        disabled += SetNativeEnabled(widget, false) ? 1 : 0;
+    };
+    isolate(NativeGrids[DebuffGroup]);
+    isolate(NativeHoverName);
+    for (std::size_t i = BuffSlotCount; i < SlotCount; ++i) {
+        const auto& native = NativeSlots[i];
+        isolate(native.slot);
+        for (void* icon : native.icons) isolate(icon);
+        isolate(native.countdown);
+        isolate(native.slot != nullptr ? FindChildWidgetByName(native.slot, "Frame") : nullptr);
+        (void)NativeShow(native.countdown, false);
+        (void)NativeShow(native.slot, false);
+    }
+    (void)NativeShow(NativeHoverName, false);
+    HoverNameShown = false;
+    if (Context == nullptr) return;
+    char line[256]{};
+    std::snprintf(line, sizeof(line),
+        "Buff HUD: native widgets disabled=%zu/%zu enabledFlag=%s offset=0x%zx mask=0x%02x debuffs=%s hoverLabel=%s mode=%s.",
+        disabled, total, qualified ? "qualified" : "not-qualified", EnabledFlagOffset,
+        static_cast<unsigned>(EnabledFlagMask), DebuffsReady ? "ready" : "missing",
+        NativeHoverName != nullptr ? "ready" : "missing", IsHdLayout() ? "hd" : "legacy");
+    disabled == total && qualified ? Context->LogInfo(line) : Context->LogWarn(line);
 }
 
 [[nodiscard]] bool ResolveWidgetHandles() noexcept {
@@ -496,8 +762,10 @@ void HideItemPictures() noexcept {
 
     HandlesResolved = true;
     ResolvedNativePanel = nativePanel;
+    ResolveNativeTree(nativePanel);
     HideItemPictures();
     (void)ApplyInputIsolation();
+    IsolateNativeWidgets();
     return true;
 }
 
@@ -572,6 +840,17 @@ void InvalidateWidgetHandles() noexcept {
     UiSpaceWidget = D2RL::Widgets::InvalidHandle;
     Handles = {};
     RenderStates = {};
+    NativeSlots = {};
+    NativeGrids = {};
+    NativeHoverName = nullptr;
+    DebuffsReady = false;
+    QualifiedNameBuffer = 0;
+    HoverNameShown = false;
+    HoverNameText = {};
+    {
+        std::lock_guard lock(PositionMutex);
+        Hits = {};
+    }
     HandlesResolved = false;
     HudShownKnown = false;
     LastRenderedRevision = std::numeric_limits<std::uint64_t>::max();
@@ -618,10 +897,15 @@ void InvalidateWidgetHandles() noexcept {
     if (FindTopLevelPanel == nullptr || FindChildWidgetByName == nullptr || slotIndex >= SlotCount) {
         return nullptr;
     }
+    const bool debuff = slotIndex >= BuffSlotCount;
     void* panel = FindTopLevelPanel(PanelName);
-    void* grid = panel != nullptr ? FindChildWidgetByName(panel, "BuffGrid") : nullptr;
+    void* grid = panel != nullptr ? FindChildWidgetByName(panel, debuff ? "DebuffGrid" : "BuffGrid") : nullptr;
     char slotName[24]{};
-    std::snprintf(slotName, sizeof(slotName), "BuffSlot%02zu", slotIndex);
+    if (debuff) {
+        std::snprintf(slotName, sizeof(slotName), "DebuffSlot%02zu", slotIndex - BuffSlotCount);
+    } else {
+        std::snprintf(slotName, sizeof(slotName), "BuffSlot%02zu", slotIndex);
+    }
     return grid != nullptr ? FindChildWidgetByName(grid, slotName) : nullptr;
 }
 
@@ -855,125 +1139,82 @@ void InvalidateWidgetHandles() noexcept {
     return true;
 }
 
-void ClearHoverOverlay() noexcept {
-    std::lock_guard lock(HoverOverlayMutex);
-    HoverOverlay = {};
+// The hover label is the layout's own HoverName TextBoxWidget, drawn by the
+// game with the panel (the 1.1.0 label was drawn in D2RLoader's overlay layer,
+// which players did not see over the game). Its text buffer is found by
+// its reserve string, like a Countdown's, and the name is written over it.
+[[nodiscard]] bool WriteHoverNameText(const char* text) noexcept {
+    if (text == nullptr || NativeHoverName == nullptr) return false;
+    std::uintptr_t pointer{};
+    if (!ReadNativeField(NativeHoverName, Native::Contract::HudTextPointerOffset, pointer) || pointer == 0) {
+        return false;
+    }
+    auto* buffer = reinterpret_cast<char*>(pointer);
+    if (!IsWritableRange(buffer, NameReserveBytes)) return false;
+    if (QualifiedNameBuffer != pointer) {
+        if (std::memcmp(buffer, NameReserve, NameReserveBytes) != 0) return false;
+        QualifiedNameBuffer = pointer;
+    }
+    // Cut at a UTF-8 character boundary so the name always fits the reserve.
+    std::size_t length = std::strlen(text);
+    if (length + 1 > NameReserveBytes) {
+        length = NameReserveBytes - 1;
+        while (length > 0 && (static_cast<unsigned char>(text[length]) & 0xC0U) == 0x80U) --length;
+    }
+    std::memcpy(buffer, NameReserve, NameReserveBytes);
+    std::memcpy(buffer, text, length);
+    buffer[length] = '\0';
+    return true;
 }
 
-void PublishHoverOverlay(
-    const char* text,
-    const POINT& point,
-    LONG clientWidth,
-    LONG clientHeight) noexcept {
-    if (text == nullptr || text[0] == '\0' || clientWidth <= 0 || clientHeight <= 0) {
-        ClearHoverOverlay();
-        return;
-    }
-
-    HoverOverlayState next{};
-    next.visible = true;
-    next.normalizedX = static_cast<float>(point.x) / static_cast<float>(clientWidth);
-    next.normalizedY = static_cast<float>(point.y) / static_cast<float>(clientHeight);
-    std::snprintf(next.text.data(), next.text.size(), "%s", text);
-
-    std::lock_guard lock(HoverOverlayMutex);
-    HoverOverlay = next;
+void RestoreHoverNameBuffer() noexcept {
+    if (QualifiedNameBuffer == 0) return;
+    auto* buffer = reinterpret_cast<char*>(QualifiedNameBuffer);
+    if (IsWritableRange(buffer, NameReserveBytes)) std::memcpy(buffer, NameReserve, NameReserveBytes);
 }
 
-void __cdecl DrawHoverOverlay(
-    const D2RL::PluginContext* context,
-    const D2RL::Overlay::Frame* frame,
-    void*) noexcept {
-    if (context == nullptr || context != Context || frame == nullptr
-        || Overlay == nullptr || frame->canvas == D2RL::Overlay::InvalidCanvasHandle) {
+void HideHoverName() noexcept {
+    if (!HoverNameShown) return;
+    (void)NativeShow(NativeHoverName, false);
+    HoverNameShown = false;
+    HoverNameText = {};
+}
+
+// Shows `text` centred above the slot box (below it at the top of the
+// screen), kept on the UI screen.
+void ShowHoverName(const char* text, const Internal::UiBox& slot, const UiFrame& frame) noexcept {
+    NativeRect label{};
+    if (NativeHoverName == nullptr || !ReadNativeRect(NativeHoverName, label)
+        || label.width <= 0 || label.height <= 0) {
+        HideHoverName();
         return;
     }
-
-    HoverOverlayState state{};
-    {
-        std::lock_guard lock(HoverOverlayMutex);
-        state = HoverOverlay;
+    if (!HoverNameShown || std::strncmp(HoverNameText.data(), text, HoverNameText.size() - 1) != 0) {
+        if (!WriteHoverNameText(text)) {
+            HideHoverName();
+            return;
+        }
+        std::snprintf(HoverNameText.data(), HoverNameText.size(), "%s", text);
     }
-    if (!state.visible || state.text[0] == '\0') return;
-
-    const auto textLength = static_cast<std::uint32_t>(std::strlen(state.text.data()));
-    if (textLength == 0) return;
-
-    const D2RL::Overlay::MeasureTextRequest measureRequest{
-        .structSize = D2RL::Overlay::MeasureTextRequestSize,
-        .flags = 0,
-        .canvas = frame->canvas,
-        .textSize = 0.0F,
-        .reserved = 0,
-        .text = state.text.data(),
-        .textLength = textLength,
-        .reserved2 = 0,
-    };
-    D2RL::Overlay::TextMetrics metrics{
-        .structSize = D2RL::Overlay::TextMetricsSize,
-        .flags = 0,
-    };
-    if (Overlay->measureText(context, &measureRequest, &metrics)
-        != D2RL::Overlay::Result::Success) {
+    const double gap = frame.hd ? 8.0 : 2.0;
+    double x = (slot.left + slot.right) * 0.5 - label.width * 0.5;
+    double y = slot.top - gap - label.height;
+    if (y < 0.0) y = slot.bottom + gap;
+    x = std::clamp(x, 0.0, std::max(0.0, frame.width - label.width));
+    y = std::clamp(y, 0.0, std::max(0.0, frame.height - label.height));
+    float anchorX{};
+    float anchorY{};
+    if (!ReadNativeAnchor(NativeHoverName, anchorX, anchorY)) anchorX = anchorY = 0.0F;
+    const auto localX = static_cast<std::int32_t>(std::lround(x - anchorX * frame.width));
+    const auto localY = static_cast<std::int32_t>(std::lround(y - anchorY * frame.height));
+    if (!NativeMove(NativeHoverName, localX, localY)) {
+        HideHoverName();
         return;
     }
-
-    constexpr float HorizontalPadding = 7.0F;
-    constexpr float VerticalPadding = 5.0F;
-    constexpr float CursorGap = 14.0F;
-    const float cursorX = state.normalizedX * frame->screenWidth;
-    const float cursorY = state.normalizedY * frame->screenHeight;
-    const float boxWidth = metrics.width + HorizontalPadding * 2.0F;
-    const float boxHeight = metrics.height + VerticalPadding * 2.0F;
-
-    float left = cursorX + CursorGap;
-    float top = cursorY - boxHeight - CursorGap;
-    if (left + boxWidth > frame->screenWidth) {
-        left = cursorX - boxWidth - CursorGap;
+    if (!HoverNameShown) {
+        if (!NativeShow(NativeHoverName, true)) return;
+        HoverNameShown = true;
     }
-    if (top < 0.0F) {
-        top = cursorY + CursorGap;
-    }
-    if (left < 0.0F) left = 0.0F;
-    if (top + boxHeight > frame->screenHeight) {
-        top = std::max(0.0F, frame->screenHeight - boxHeight);
-    }
-
-    const D2RL::Overlay::FilledRectangleRequest background{
-        .structSize = D2RL::Overlay::FilledRectangleRequestSize,
-        .flags = 0,
-        .canvas = frame->canvas,
-        .rect = {left, top, left + boxWidth, top + boxHeight},
-        .color = {0.0F, 0.0F, 0.0F, 0.82F},
-        .rounding = 2.0F,
-        .reserved = 0,
-    };
-    (void)Overlay->drawFilledRectangle(context, &background);
-
-    const D2RL::Overlay::RectangleRequest border{
-        .structSize = D2RL::Overlay::RectangleRequestSize,
-        .flags = 0,
-        .canvas = frame->canvas,
-        .rect = {left, top, left + boxWidth, top + boxHeight},
-        .color = {0.55F, 0.55F, 0.55F, 0.95F},
-        .rounding = 2.0F,
-        .thickness = 1.0F,
-    };
-    (void)Overlay->drawRectangle(context, &border);
-
-    const D2RL::Overlay::TextRequest textRequest{
-        .structSize = D2RL::Overlay::TextRequestSize,
-        .flags = 0,
-        .canvas = frame->canvas,
-        .position = {left + HorizontalPadding, top + VerticalPadding},
-        .color = {1.0F, 1.0F, 1.0F, 1.0F},
-        .textSize = 0.0F,
-        .reserved = 0,
-        .text = state.text.data(),
-        .textLength = textLength,
-        .reserved2 = 0,
-    };
-    (void)Overlay->drawText(context, &textRequest);
 }
 
 void ClearTooltip(std::size_t slotIndex) noexcept {
@@ -1053,102 +1294,166 @@ void ApplyTooltip(
     return true;
 }
 
-void UpdateHoverNamePresentation() noexcept {
-    ClearHoverOverlay();
-    if (!HandlesResolved || Context == nullptr || Widgets == nullptr) return;
-
+// Where the UI screen sits in the client area. D2RLoader returns the authored
+// 0x0 rect of the fit-to-parent root: the root is then the game's UI screen,
+// which D2R fits to the client height and centres (classic graphics get side
+// bars).
+[[nodiscard]] bool ComputeUiFrame(UiFrame& frame) noexcept {
+    frame = {};
+    if (!HandlesResolved || Context == nullptr || Widgets == nullptr) return false;
     HWND window = GameWindow();
-    if (window == nullptr || IsIconic(window)) return;
-
-    POINT point{};
     RECT client{};
-    if (!GetCursorPos(&point) || !ScreenToClient(window, &point) || !GetClientRect(window, &client)) return;
+    if (window == nullptr || IsIconic(window) || !GetClientRect(window, &client)) return false;
     const auto clientWidth = client.right - client.left;
     const auto clientHeight = client.bottom - client.top;
-    if (clientWidth <= 0 || clientHeight <= 0) return;
+    if (clientWidth <= 0 || clientHeight <= 0) return false;
+    D2RL::Widgets::Rect root{};
+    if (Widgets->getWidgetRect(Context, HudPanel, &root) != D2RL::Widgets::Result::Success) return false;
+    const bool rootFromScreen = root.width <= 0 || root.height <= 0;
+    if (rootFromScreen && !GameUiScreen(clientWidth, clientHeight, root)) return false;
+    frame.width = root.width;
+    frame.height = root.height;
+    frame.hd = IsHdLayout();
+    if (rootFromScreen) {
+        frame.scaleX = frame.scaleY = static_cast<double>(clientHeight) / frame.height;
+        frame.left = (static_cast<double>(clientWidth) - frame.width * frame.scaleX) * 0.5;
+    } else {
+        frame.scaleX = static_cast<double>(clientWidth) / frame.width;
+        frame.scaleY = static_cast<double>(clientHeight) / frame.height;
+        frame.left = 0.0;
+    }
+    frame.valid = frame.width > 0.0 && frame.height > 0.0 && frame.scaleX > 0.0 && frame.scaleY > 0.0;
+    return frame.valid;
+}
 
-    D2RL::Widgets::Rect panelRect{};
-    D2RL::Widgets::Rect gridRect{};
-    if (Widgets->getWidgetRect(Context, HudPanel, &panelRect) != D2RL::Widgets::Result::Success
-        || Widgets->getWidgetRect(Context, GridWidget, &gridRect) != D2RL::Widgets::Result::Success) {
+// The grid's box on the UI screen: anchor * screen + local x / y.
+[[nodiscard]] bool GridBox(std::size_t group, const UiFrame& frame, GroupHit& hit) noexcept {
+    hit = {};
+    NativeRect rect{};
+    float anchorX{};
+    float anchorY{};
+    void* grid = NativeGrids[group];
+    if (!frame.valid || !ReadNativeRect(grid, rect) || !ReadNativeAnchor(grid, anchorX, anchorY)
+        || rect.width <= 0 || rect.height <= 0) {
+        return false;
+    }
+    hit.left = anchorX * frame.width + rect.x;
+    hit.top = anchorY * frame.height + rect.y;
+    hit.width = rect.width;
+    hit.height = rect.height;
+    hit.valid = true;
+    return true;
+}
+
+// Puts each grid at its saved spot for this graphics mode (a fraction of the
+// UI screen for its top-left corner), else at its JSON spot, always wholly on
+// the screen. With `clampSaved` the clamped spot is written back (a drag ends).
+void ApplyGroupPositions(const UiFrame& frame, bool clampSaved) noexcept {
+    if (!frame.valid || NativeSetXFn == nullptr || NativeSetYFn == nullptr) return;
+    const std::size_t mode = frame.hd ? 1 : 0;
+    for (std::size_t group = 0; group < GroupCount; ++group) {
+        void* grid = NativeGrids[group];
+        NativeRect rect{};
+        float anchorX{};
+        float anchorY{};
+        if (grid == nullptr || !ReadNativeRect(grid, rect) || !ReadNativeAnchor(grid, anchorX, anchorY)) continue;
+        Core::PanelPosition saved{};
+        GroupDefault fallback{};
+        {
+            std::lock_guard lock(PositionMutex);
+            saved = SavedPositions[mode][group];
+            fallback = GroupDefaults[mode][group];
+        }
+        if (!fallback.known) continue;
+        const double baseX = anchorX * frame.width;
+        const double baseY = anchorY * frame.height;
+        double left = saved.IsSet() ? saved.x * frame.width : baseX + fallback.x;
+        double top = saved.IsSet() ? saved.y * frame.height : baseY + fallback.y;
+        left = std::clamp(left, 0.0, std::max(0.0, frame.width - rect.width));
+        top = std::clamp(top, 0.0, std::max(0.0, frame.height - rect.height));
+        if (clampSaved && saved.IsSet()) {
+            std::lock_guard lock(PositionMutex);
+            SavedPositions[mode][group] = {
+                .x = static_cast<float>(left / frame.width),
+                .y = static_cast<float>(top / frame.height)};
+        }
+        (void)NativeMove(grid,
+            static_cast<std::int32_t>(std::lround(left - baseX)),
+            static_cast<std::int32_t>(std::lround(top - baseY)));
+    }
+}
+
+// The boxes of the occupied slots of both groups, on the UI screen.
+[[nodiscard]] HitSnapshot CollectHits(const UiFrame& frame) noexcept {
+    HitSnapshot hits{};
+    hits.frame = frame;
+    if (!frame.valid) return hits;
+    for (std::size_t group = 0; group < GroupCount; ++group) {
+        auto& hit = hits.groups[group];
+        if (!GridBox(group, frame, hit)) continue;
+        const std::size_t first = group == BuffGroup ? 0 : BuffSlotCount;
+        const std::size_t last = group == BuffGroup ? BuffSlotCount : SlotCount;
+        for (std::size_t i = first; i < last && hit.count < hit.slots.size(); ++i) {
+            NativeRect slot{};
+            if (!RenderStates[i].visible || !ReadNativeRect(NativeSlots[i].slot, slot)) continue;
+            hit.slots[hit.count] = {hit.left + slot.x, hit.top + slot.y,
+                                    hit.left + slot.x + slot.width, hit.top + slot.y + slot.height};
+            hit.slotIndex[hit.count] = i;
+            ++hit.count;
+        }
+    }
+    hits.valid = true;
+    return hits;
+}
+
+// The cursor on the UI screen; false when it is outside the game window.
+[[nodiscard]] bool CursorOnUi(const UiFrame& frame, double& x, double& y) noexcept {
+    HWND window = GameWindow();
+    POINT point{};
+    if (window == nullptr || !GetCursorPos(&point) || !ScreenToClient(window, &point)) return false;
+    x = (static_cast<double>(point.x) - frame.left) / frame.scaleX;
+    y = static_cast<double>(point.y) / frame.scaleY;
+    return true;
+}
+
+[[nodiscard]] bool Contains(const Internal::UiBox& box, double x, double y) noexcept {
+    return x >= box.left && x < box.right && y >= box.top && y < box.bottom;
+}
+
+// Shows the hovered slot's name (buff or debuff) in the hover label.
+void UpdateHoverNamePresentation(const HitSnapshot& hits) noexcept {
+    double x{};
+    double y{};
+    bool dragging{};
+    {
+        std::lock_guard lock(PositionMutex);
+        dragging = Drag.active;
+    }
+    if (!hits.valid || dragging || !CursorOnUi(hits.frame, x, y)) {
+        HideHoverName();
         return;
     }
-    // D2RLoader 1.3.1 returns the authored rect of the fit-to-parent root (0x0).
-    // The root is then the game's UI screen, which D2R fits to the client
-    // height and centres (classic graphics get side bars).
-    const bool rootFromScreen = panelRect.width <= 0 || panelRect.height <= 0;
-    if (rootFromScreen && !GameUiScreen(clientWidth, clientHeight, panelRect)) return;
-
-    double uiX{};
-    double uiY{};
-    if (rootFromScreen) {
-        const double scale = static_cast<double>(clientHeight) / static_cast<double>(panelRect.height);
-        const double left = (static_cast<double>(clientWidth) - static_cast<double>(panelRect.width) * scale) * 0.5;
-        uiX = (static_cast<double>(point.x) - left) / scale;
-        uiY = static_cast<double>(point.y) / scale;
-    } else {
-        uiX = static_cast<double>(point.x) * static_cast<double>(panelRect.width)
-            / static_cast<double>(clientWidth);
-        uiY = static_cast<double>(point.y) * static_cast<double>(panelRect.height)
-            / static_cast<double>(clientHeight);
+    if (!HoverGeometryLogged && Context != nullptr) {
+        const auto& buffs = hits.groups[BuffGroup];
+        const auto& debuffs = hits.groups[DebuffGroup];
+        char line[384]{};
+        std::snprintf(line, sizeof(line),
+            "BUFF_HOVER_GEOMETRY mode=%s screen=%.0fx%.0f scale=%.3f left=%.1f buffs=(%.1f,%.1f %.0fx%.0f) debuffs=(%.1f,%.1f %.0fx%.0f)",
+            hits.frame.hd ? "hd" : "legacy", hits.frame.width, hits.frame.height, hits.frame.scaleY,
+            hits.frame.left, buffs.left, buffs.top, buffs.width, buffs.height,
+            debuffs.left, debuffs.top, debuffs.width, debuffs.height);
+        Context->LogInfo(line);
+        HoverGeometryLogged = true;
     }
-
-    // WidgetService guarantees parent-local coordinates but does not specify
-    // whether a JSON anchor is already baked into x/y. Accept either form:
-    // an in-parent rectangle is already resolved; an authored rectangle that
-    // sits outside the fit-to-parent root receives BuffGrid's (0.5, 1.0)
-    // anchor exactly once.
-    const bool gridRectAlreadyResolved =
-        gridRect.x >= 0 && gridRect.y >= 0
-        && gridRect.x + gridRect.width <= panelRect.width
-        && gridRect.y + gridRect.height <= panelRect.height;
-    const double gridLeft = gridRectAlreadyResolved
-        ? static_cast<double>(gridRect.x)
-        : static_cast<double>(panelRect.width) * 0.5 + static_cast<double>(gridRect.x);
-    const double gridTop = gridRectAlreadyResolved
-        ? static_cast<double>(gridRect.y)
-        : static_cast<double>(panelRect.height) + static_cast<double>(gridRect.y);
-
-    if (!HoverGeometryLogged) {
-        for (std::size_t i = 0; i < Handles.size(); ++i) {
-            if (!RenderStates[i].visible) continue;
-            D2RL::Widgets::Rect firstSlot{};
-            if (Widgets->getWidgetRect(Context, Handles[i].slot, &firstSlot)
-                == D2RL::Widgets::Result::Success) {
-                char line[384]{};
-                std::snprintf(
-                    line, sizeof(line),
-                    "BUFF_HOVER_GEOMETRY rectMode=%s panel=(%d,%d %dx%d) grid=(%d,%d %dx%d) origin=(%.1f,%.1f) slot=%zu:(%d,%d %dx%d) client=%ldx%ld",
-                    rootFromScreen ? "screen" : gridRectAlreadyResolved ? "resolved" : "anchored",
-                    panelRect.x, panelRect.y, panelRect.width, panelRect.height,
-                    gridRect.x, gridRect.y, gridRect.width, gridRect.height,
-                    gridLeft, gridTop,
-                    i, firstSlot.x, firstSlot.y, firstSlot.width, firstSlot.height,
-                    static_cast<long>(clientWidth), static_cast<long>(clientHeight));
-                Context->LogInfo(line);
-                HoverGeometryLogged = true;
-            }
-            break;
+    for (const auto& group : hits.groups) {
+        for (std::size_t k = 0; k < group.count; ++k) {
+            const auto& state = RenderStates[group.slotIndex[k]];
+            if (!state.tooltipVisible || state.hoverText[0] == '\0' || !Contains(group.slots[k], x, y)) continue;
+            ShowHoverName(state.hoverText.data(), group.slots[k], hits.frame);
+            return;
         }
     }
-
-    for (std::size_t i = 0; i < Handles.size(); ++i) {
-        const auto& state = RenderStates[i];
-        if (!state.visible || !state.tooltipVisible || state.hoverText[0] == '\0') continue;
-        D2RL::Widgets::Rect slotRect{};
-        if (Widgets->getWidgetRect(Context, Handles[i].slot, &slotRect)
-            != D2RL::Widgets::Result::Success) {
-            continue;
-        }
-        const double left = gridLeft + static_cast<double>(slotRect.x);
-        const double top = gridTop + static_cast<double>(slotRect.y);
-        const double right = left + static_cast<double>(slotRect.width);
-        const double bottom = top + static_cast<double>(slotRect.height);
-        if (uiX >= left && uiX < right && uiY >= top && uiY < bottom) {
-            PublishHoverOverlay(state.hoverText.data(), point, clientWidth, clientHeight);
-            break;
-        }
-    }
+    HideHoverName();
 }
 
 [[nodiscard]] bool ResolveEntryIcon(
@@ -1191,22 +1496,52 @@ void FormatSeconds(std::uint32_t seconds, char (&output)[16]) noexcept {
     }
 }
 
+[[nodiscard]] bool IsDebuffSlot(std::size_t slotIndex) noexcept {
+    return slotIndex >= BuffSlotCount && slotIndex < SlotCount;
+}
+
+// A buff slot goes through its WidgetService handles, a debuff slot through
+// its native widgets.
+void ShowSlotWidget(std::size_t slotIndex, bool visible) noexcept {
+    if (IsDebuffSlot(slotIndex)) {
+        (void)NativeShow(NativeSlots[slotIndex].slot, visible);
+    } else if (slotIndex < BuffSlotCount) {
+        (void)SetVisible(Handles[slotIndex].slot, visible);
+    }
+}
+
+void ShowCountdown(std::size_t slotIndex, bool visible) noexcept {
+    if (IsDebuffSlot(slotIndex)) {
+        (void)NativeShow(NativeSlots[slotIndex].countdown, visible);
+    } else if (slotIndex < BuffSlotCount) {
+        (void)SetVisible(Handles[slotIndex].countdown, visible);
+    }
+}
+
+// Keeps every atlas button disabled (click-through) and shows only `selected`
+// (none with AtlasCount).
+void SelectAtlas(std::size_t slotIndex, std::size_t selected) noexcept {
+    for (std::size_t i = 0; i < AtlasCount; ++i) {
+        if (IsDebuffSlot(slotIndex)) {
+            void* icon = NativeSlots[slotIndex].icons[i];
+            (void)SetNativeEnabled(icon, false);
+            (void)NativeShow(icon, i == selected);
+        } else {
+            (void)SetEnabled(Handles[slotIndex].icons[i], false);
+            (void)SetVisible(Handles[slotIndex].icons[i], i == selected);
+        }
+    }
+}
+
 [[nodiscard]] bool ApplyIcon(std::size_t slotIndex, const SkillIconDescriptor& icon) noexcept {
     if (slotIndex >= SlotCount || !ResolveWidgetHandles()) return false;
-    auto& handles = Handles[slotIndex];
     const auto selected = AtlasIndex(icon.atlas);
+    // BuffHud is display-only. Even when a buff is active, its atlas button
+    // must stay click-through, so keep every ButtonWidget disabled and only
+    // use visibility to choose the currently rendered atlas.
+    SelectAtlas(slotIndex, selected);
 
-    for (std::size_t i = 0; i < handles.icons.size(); ++i) {
-        const bool selectedIcon = i == selected;
-        // BuffHud is display-only. Even when a buff is active, its atlas button
-        // must stay click-through, so keep every ButtonWidget disabled and only
-        // use visibility to choose the currently rendered atlas.
-        if (!SetEnabled(handles.icons[i], false)) {
-        }
-        (void)SetVisible(handles.icons[i], selectedIcon);
-    }
-
-    void* nativeIcon = ResolveNativeSlotChild(slotIndex, AtlasWidgetNames[selected]);
+    void* nativeIcon = NativeSlots[slotIndex].icons[selected];
     const auto declaredFrame = static_cast<std::uint16_t>(slotIndex * 2);
     if (Internal::TryApplyIconFrame(nativeIcon, icon.frame, declaredFrame)) return true;
 
@@ -1217,24 +1552,24 @@ void FormatSeconds(std::uint32_t seconds, char (&output)[16]) noexcept {
 }
 
 void HideItemIcon(std::size_t slotIndex) noexcept {
+    if (slotIndex >= BuffSlotCount) return;
     auto& item = Handles[slotIndex].item;
     if (item == nullptr) return;
     (void)SetItemPictureVisible(item, false);
     item = nullptr;
 }
 
-// Item pictures are optional hidden layout containers named Item_<code>. A
-// code without a container in this slot keeps the atlas icon.
+// Item pictures are optional hidden layout containers named Item_<code> (buff
+// slots only). A code without a container in this slot keeps the atlas icon.
 [[nodiscard]] bool ApplyItemIcon(std::size_t slotIndex, const char* itemCode) noexcept {
     HideItemIcon(slotIndex);
-    if (itemCode == nullptr || itemCode[0] == '\0' || !VisibleFlagQualified) return false;
+    if (slotIndex >= BuffSlotCount || itemCode == nullptr || itemCode[0] == '\0' || !VisibleFlagQualified) {
+        return false;
+    }
     auto& handles = Handles[slotIndex];
     void* item = FindItemPicture(ResolveNativeSlot(slotIndex), itemCode);
     if (item == nullptr) return false;
-    for (const auto icon : handles.icons) {
-        (void)SetEnabled(icon, false);
-        (void)SetVisible(icon, false);
-    }
+    SelectAtlas(slotIndex, AtlasCount);
     if (!SetItemPictureVisible(item, true)) return false;
     handles.item = item;
     return true;
@@ -1248,14 +1583,17 @@ void HideSlot(std::size_t slotIndex) noexcept {
     // Visibility alone does not remove ButtonWidget hit targets. Once an
     // occupied slot becomes empty, disable every atlas child before hiding it.
     // Initial empty slots were already disabled by ResolveWidgetHandles().
-    for (const auto icon : Handles[slotIndex].icons) {
-        if (!SetEnabled(icon, false)) {
+    for (std::size_t i = 0; i < AtlasCount; ++i) {
+        if (IsDebuffSlot(slotIndex)) {
+            (void)SetNativeEnabled(NativeSlots[slotIndex].icons[i], false);
+        } else {
+            (void)SetEnabled(Handles[slotIndex].icons[i], false);
         }
     }
     ClearTooltip(slotIndex);
     state.tooltipVisible = false;
 
-    (void)SetVisible(Handles[slotIndex].slot, false);
+    ShowSlotWidget(slotIndex, false);
     const auto qualifiedTimerBuffer = state.qualifiedTimerBuffer;
     const auto qualifiedTooltipWidget = state.qualifiedTooltipWidget;
     const auto qualifiedTooltipBuffer = state.qualifiedTooltipBuffer;
@@ -1278,6 +1616,7 @@ void RenderSlot(
 
     SkillIconDescriptor icon{};
     const bool iconResolved = ResolveEntryIcon(entry, icon);
+    (void)iconResolved;
     char itemCode[ItemCodeBytes]{};
     (void)Core::BuffPresentations().FindItemCode(entry.stateId, itemCode, sizeof(itemCode));
     auto& state = RenderStates[slotIndex];
@@ -1290,7 +1629,7 @@ void RenderSlot(
         || state.sourceSkillId != entry.sourceSkillId;
 
     if (assignmentChanged) {
-        (void)SetVisible(Handles[slotIndex].slot, false);
+        ShowSlotWidget(slotIndex, false);
         const bool iconApplied = ApplyItemIcon(slotIndex, itemCode) || ApplyIcon(slotIndex, icon);
         std::memcpy(state.itemCode, itemCode, sizeof(state.itemCode));
         state.key = entry.key;
@@ -1308,7 +1647,7 @@ void RenderSlot(
         state.tooltipVisible = false;
         ApplyTooltip(slotIndex, entry);
         state.visible = true;
-        (void)SetVisible(Handles[slotIndex].slot, true);
+        ShowSlotWidget(slotIndex, true);
     }
 
     if (entry.displayMode == Core::BuffDisplayMode::Resource) {
@@ -1319,7 +1658,7 @@ void RenderSlot(
         char text[32]{};
         std::snprintf(text, sizeof(text), "%d", entry.currentValue);
         if (WriteCountdownText(slotIndex, text)) {
-            (void)SetVisible(Handles[slotIndex].countdown, true);
+            ShowCountdown(slotIndex, true);
             state.timerVisible = true;
             state.seconds = NoRenderedSeconds;
             state.currentValue = entry.currentValue;
@@ -1331,7 +1670,7 @@ void RenderSlot(
     const bool wantsTimer = entry.expireGameFrame != 0;
     if (!wantsTimer) {
         if (state.timerVisible) {
-            (void)SetVisible(Handles[slotIndex].countdown, false);
+            ShowCountdown(slotIndex, false);
             state.timerVisible = false;
             state.seconds = NoRenderedSeconds;
             state.currentValue = NoRenderedValue;
@@ -1343,7 +1682,7 @@ void RenderSlot(
     if (!hasClock) {
         if (state.seconds != NoRenderedSeconds || !state.timerVisible) {
             if (WriteCountdownText(slotIndex, "--")) {
-                (void)SetVisible(Handles[slotIndex].countdown, true);
+                ShowCountdown(slotIndex, true);
                 state.timerVisible = true;
                 state.seconds = NoRenderedSeconds;
             }
@@ -1357,7 +1696,7 @@ void RenderSlot(
     char text[16]{};
     FormatSeconds(seconds, text);
     if (WriteCountdownText(slotIndex, text)) {
-        (void)SetVisible(Handles[slotIndex].countdown, true);
+        ShowCountdown(slotIndex, true);
         state.timerVisible = true;
         state.seconds = seconds;
     }
@@ -1373,10 +1712,11 @@ void RenderSlot(
 
 void HideAllSlots() noexcept {
     for (std::size_t i = 0; i < SlotCount; ++i) {
-        (void)SetVisible(Handles[i].slot, false);
-        (void)SetVisible(Handles[i].countdown, false);
+        ShowSlotWidget(i, false);
+        ShowCountdown(i, false);
         ClearTooltip(i);
     }
+    HideHoverName();
 }
 
 void OpenPanel() noexcept;
@@ -1423,42 +1763,14 @@ void OpenPanel() noexcept;
     return IsNativeShown(FindTopLevelPanel(name));
 }
 
-// True when an occupied slot's box on the UI screen overlaps the side panel.
-// Same grid origin as the hover names (UpdateHoverNamePresentation).
-[[nodiscard]] bool OccupiedSlotOverlaps(Internal::PanelSide side) noexcept {
-    HWND window = GameWindow();
-    RECT client{};
-    if (window == nullptr || !GetClientRect(window, &client)) return false;
-    const auto clientWidth = client.right - client.left;
-    const auto clientHeight = client.bottom - client.top;
-    if (clientWidth <= 0 || clientHeight <= 0) return false;
-
-    D2RL::Widgets::Rect rootRect{};
-    D2RL::Widgets::Rect grid{};
-    if (Widgets->getWidgetRect(Context, HudPanel, &rootRect) != D2RL::Widgets::Result::Success
-        || Widgets->getWidgetRect(Context, GridWidget, &grid) != D2RL::Widgets::Result::Success) {
-        return false;
-    }
-    if ((rootRect.width <= 0 || rootRect.height <= 0) && !GameUiScreen(clientWidth, clientHeight, rootRect)) {
-        return false;
-    }
-    D2RL::Widgets::Rect space{};
-    const bool hd = UiSpaceWidget != D2RL::Widgets::InvalidHandle
-        && Widgets->getWidgetRect(Context, UiSpaceWidget, &space) == D2RL::Widgets::Result::Success
-        && space.height > 0;
-    const bool resolved = grid.x >= 0 && grid.y >= 0
-        && grid.x + grid.width <= rootRect.width && grid.y + grid.height <= rootRect.height;
-    const double gridLeft = resolved ? grid.x : rootRect.width * 0.5 + grid.x;
-    const double gridTop = resolved ? grid.y : static_cast<double>(rootRect.height) + grid.y;
-    const auto panel = Internal::SidePanelBox(side, rootRect.width, rootRect.height, hd);
-
-    for (std::size_t i = 0; i < Handles.size(); ++i) {
-        if (!RenderStates[i].visible) continue;
-        D2RL::Widgets::Rect slot{};
-        if (Widgets->getWidgetRect(Context, Handles[i].slot, &slot) != D2RL::Widgets::Result::Success) continue;
-        const Internal::UiBox box{gridLeft + slot.x, gridTop + slot.y,
-                                  gridLeft + slot.x + slot.width, gridTop + slot.y + slot.height};
-        if (Internal::Overlaps(box, panel)) return true;
+// True when an occupied slot of either group overlaps the side panel.
+[[nodiscard]] bool OccupiedSlotOverlaps(Internal::PanelSide side, const HitSnapshot& hits) noexcept {
+    if (!hits.valid) return false;
+    const auto panel = Internal::SidePanelBox(side, hits.frame.width, hits.frame.height, hits.frame.hd);
+    for (const auto& group : hits.groups) {
+        for (std::size_t k = 0; k < group.count; ++k) {
+            if (Internal::Overlaps(group.slots[k], panel)) return true;
+        }
     }
     return false;
 }
@@ -1466,14 +1778,14 @@ void OpenPanel() noexcept;
 // The open native panel the icons hide for, or null: a HidingPanels entry, or
 // a SidePanels entry an occupied slot overlaps. A panel counts as open when it
 // exists and its own visibility bit says shown.
-[[nodiscard]] const char* OpenHidingPanel() noexcept {
+[[nodiscard]] const char* OpenHidingPanel(const HitSnapshot& hits) noexcept {
     // HideItemPictures qualifies the bit on the first render.
     if (FindTopLevelPanel == nullptr || !VisibleFlagQualified || Widgets == nullptr) return nullptr;
     for (const auto* name : HidingPanels) {
         if (IsNativePanelOpen(name)) return name;
     }
     for (const auto& panel : SidePanels) {
-        if (IsNativePanelOpen(panel.name) && OccupiedSlotOverlaps(panel.side)) return panel.name;
+        if (IsNativePanelOpen(panel.name) && OccupiedSlotOverlaps(panel.side, hits)) return panel.name;
     }
     return nullptr;
 }
@@ -1487,10 +1799,81 @@ void ApplyHudShown(bool shown) noexcept {
     HudShownApplied = shown;
 }
 
+void FormatPosition(const Core::PanelPosition& position, char (&x)[16], char (&y)[16]) noexcept {
+    // Plain digits whatever the C locale: 4 decimals of a fraction, or -1.
+    auto format = [](float value, char (&out)[16]) noexcept {
+        if (value < 0.0F) {
+            std::snprintf(out, sizeof(out), "-1");
+            return;
+        }
+        const auto scaled = static_cast<long>(std::lround(std::min(value, 1.0F) * 10000.0F));
+        std::snprintf(out, sizeof(out), "%ld.%04ld", scaled / 10000, scaled % 10000);
+    };
+    format(position.x, x);
+    format(position.y, y);
+}
+
+// Writes the saved positions (and reset_* = false) into buff-panel.toml,
+// keeping its other lines and comments.
+void SavePositions(bool clearResets) noexcept {
+    if (Context == nullptr) return;
+    std::array<std::array<Core::PanelPosition, GroupCount>, ModeCount> positions{};
+    {
+        std::lock_guard lock(PositionMutex);
+        positions = SavedPositions;
+    }
+    std::string text;
+    {
+        std::array<char, 8192> buffer{};
+        std::uint32_t required{};
+        if (Context->ReadConfig(buffer.data(), static_cast<std::uint32_t>(buffer.size()), &required)) {
+            text = buffer.data();
+        }
+    }
+    for (std::size_t mode = 0; mode < ModeCount; ++mode) {
+        for (std::size_t group = 0; group < GroupCount; ++group) {
+            char x[16]{};
+            char y[16]{};
+            FormatPosition(positions[mode][group], x, y);
+            const std::string prefix = std::string(ModeNames[mode]) + "_" + GroupNames[group];
+            text = Core::SetConfigValue(text, prefix + "_x", x);
+            text = Core::SetConfigValue(text, prefix + "_y", y);
+        }
+    }
+    if (clearResets) {
+        text = Core::SetConfigValue(text, "reset_buffs", "false");
+        text = Core::SetConfigValue(text, "reset_debuffs", "false");
+    }
+    const bool written = Context->WriteConfig(text.c_str());
+    char line[320]{};
+    char bx[16]{}, by[16]{}, dx[16]{}, dy[16]{}, lbx[16]{}, lby[16]{}, ldx[16]{}, ldy[16]{};
+    FormatPosition(positions[1][BuffGroup], bx, by);
+    FormatPosition(positions[1][DebuffGroup], dx, dy);
+    FormatPosition(positions[0][BuffGroup], lbx, lby);
+    FormatPosition(positions[0][DebuffGroup], ldx, ldy);
+    std::snprintf(line, sizeof(line),
+        "Buff HUD: %s buff-panel.toml positions hd buffs=(%s,%s) debuffs=(%s,%s) legacy buffs=(%s,%s) debuffs=(%s,%s).",
+        written ? "saved" : "FAILED to save", bx, by, dx, dy, lbx, lby, ldx, ldy);
+    written ? Context->LogInfo(line) : Context->LogWarn(line);
+}
+
+void InstallWindowHook() noexcept;
+
 void RenderSnapshot() noexcept {
     if (!EnsureLivePanel()) return;
+    InstallWindowHook();
     // A table reload can name item codes the last pass did not hide.
     if (Core::BuffPresentations().Generation() != HiddenItemGeneration) HideItemPictures();
+
+    bool saveNow{};
+    {
+        std::lock_guard lock(PositionMutex);
+        saveNow = SaveRequested;
+        SaveRequested = false;
+    }
+    UiFrame frame{};
+    if (ComputeUiFrame(frame)) ApplyGroupPositions(frame, saveNow);
+    if (saveNow) SavePositions(false);
 
     auto snapshot = Core::BuffDisplays().Snapshot();
     std::uint32_t nowFrame{};
@@ -1510,13 +1893,8 @@ void RenderSnapshot() noexcept {
             }
         }
         if (expiredCount != 0) {
-            for (std::size_t i = 0; i < expiredCount; ++i) {
-                if (Core::BuffDisplays().Remove(expired[i])) {
-                }
-            }
+            for (std::size_t i = 0; i < expiredCount; ++i) (void)Core::BuffDisplays().Remove(expired[i]);
             snapshot = Core::BuffDisplays().Snapshot();
-            if (snapshot.count == 0 && !snapshot.hasGameFrame) {
-            }
         }
     }
 
@@ -1531,13 +1909,25 @@ void RenderSnapshot() noexcept {
             return lhs.sequence < rhs.sequence;
         });
 
-    const auto visibleCount = std::min<std::size_t>(orderedCount, SlotCount);
-    for (std::size_t i = 0; i < visibleCount; ++i) {
-        RenderSlot(i, ordered[i], nowFrame, hasClock);
+    // Buffs fill the buff group from its first slot, debuffs the debuff group.
+    std::size_t buffs = 0;
+    std::size_t debuffs = 0;
+    for (std::size_t i = 0; i < orderedCount; ++i) {
+        if (ordered[i].debuff) {
+            if (DebuffsReady && debuffs < DebuffSlotCount) {
+                RenderSlot(BuffSlotCount + debuffs++, ordered[i], nowFrame, hasClock);
+            }
+        } else if (buffs < BuffSlotCount) {
+            RenderSlot(buffs++, ordered[i], nowFrame, hasClock);
+        }
     }
-    for (std::size_t i = visibleCount; i < SlotCount; ++i) HideSlot(i);
+    for (std::size_t i = buffs; i < BuffSlotCount; ++i) HideSlot(i);
+    for (std::size_t i = BuffSlotCount + debuffs; i < SlotCount; ++i) {
+        if (DebuffsReady) HideSlot(i);
+    }
 
-    const char* hiding = HideWithPanels ? OpenHidingPanel() : nullptr;
+    auto hits = CollectHits(frame);
+    const char* hiding = HideWithPanels ? OpenHidingPanel(hits) : nullptr;
     if (hiding != HidingPanel && Context != nullptr) {
         char line[160]{};
         std::snprintf(line, sizeof(line), hiding != nullptr
@@ -1548,12 +1938,136 @@ void RenderSnapshot() noexcept {
     }
     HidingPanel = hiding;
     ApplyHudShown(hiding == nullptr);
-    if (hiding == nullptr) {
-        UpdateHoverNamePresentation();
-    } else {
-        ClearHoverOverlay();
+    if (hiding != nullptr) hits.valid = false;
+    UpdateHoverNamePresentation(hits);
+    {
+        std::lock_guard lock(PositionMutex);
+        Hits = hits;
     }
     LastRenderedRevision = snapshot.revision;
+}
+
+// Moving a group: Left Ctrl + left button down on one of its icons grabs it,
+// the mouse moves it, releasing the button drops it and saves its spot. These
+// clicks never reach the game. Runs on the game window's thread.
+[[nodiscard]] bool BeginDrag(LPARAM lParam) noexcept {
+    const double x = static_cast<short>(LOWORD(lParam));
+    const double y = static_cast<short>(HIWORD(lParam));
+    std::lock_guard lock(PositionMutex);
+    if (!Hits.valid || !Hits.frame.valid || Drag.active) return false;
+    const double ux = (x - Hits.frame.left) / Hits.frame.scaleX;
+    const double uy = y / Hits.frame.scaleY;
+    for (std::size_t group = 0; group < GroupCount; ++group) {
+        const auto& hit = Hits.groups[group];
+        for (std::size_t k = 0; k < hit.count; ++k) {
+            if (!Contains(hit.slots[k], ux, uy)) continue;
+            Drag = {.active = true, .group = group, .mode = Hits.frame.hd ? 1U : 0U,
+                    .grabX = ux - hit.left, .grabY = uy - hit.top};
+            return true;
+        }
+    }
+    return false;
+}
+
+void UpdateDrag(LPARAM lParam) noexcept {
+    const double x = static_cast<short>(LOWORD(lParam));
+    const double y = static_cast<short>(HIWORD(lParam));
+    std::lock_guard lock(PositionMutex);
+    if (!Drag.active || !Hits.frame.valid) return;
+    const auto& frame = Hits.frame;
+    const double left = (x - frame.left) / frame.scaleX - Drag.grabX;
+    const double top = y / frame.scaleY - Drag.grabY;
+    SavedPositions[Drag.mode][Drag.group] = {
+        .x = static_cast<float>(std::clamp(left / frame.width, 0.0, 1.0)),
+        .y = static_cast<float>(std::clamp(top / frame.height, 0.0, 1.0))};
+}
+
+[[nodiscard]] bool EndDrag() noexcept {
+    std::lock_guard lock(PositionMutex);
+    if (!Drag.active) return false;
+    Drag.active = false;
+    SaveRequested = true;
+    DragsCompleted.fetch_add(1, std::memory_order_relaxed);
+    return true;
+}
+
+[[nodiscard]] bool IsDragging() noexcept {
+    std::lock_guard lock(PositionMutex);
+    return Drag.active;
+}
+
+LRESULT CALLBACK BuffWindowProc(HWND window, UINT message, WPARAM wParam, LPARAM lParam) {
+    switch (message) {
+    case WM_LBUTTONDOWN:
+    case WM_LBUTTONDBLCLK:
+        // Left Ctrl: the click carries MK_CONTROL and the left Ctrl key is
+        // down (Right Ctrl alone leaves the click to the game).
+        if ((wParam & MK_CONTROL) != 0 && (GetKeyState(VK_LCONTROL) & 0x8000) != 0 && BeginDrag(lParam)) return 0;
+        break;
+    case WM_MOUSEMOVE:
+        if (IsDragging()) {
+            if ((wParam & MK_LBUTTON) == 0) {
+                (void)EndDrag();
+            } else {
+                UpdateDrag(lParam);
+                wParam &= ~static_cast<WPARAM>(MK_LBUTTON);
+            }
+        }
+        break;
+    case WM_LBUTTONUP:
+        if (EndDrag()) return 0;
+        break;
+    case WM_KILLFOCUS:
+    case WM_CAPTURECHANGED:
+        (void)EndDrag();
+        break;
+    case WM_ACTIVATEAPP:
+        if (wParam == FALSE) (void)EndDrag();
+        break;
+    default:
+        break;
+    }
+    const WNDPROC previous = PreviousWndProc;
+    return previous != nullptr
+        ? CallWindowProcW(previous, window, message, wParam, lParam)
+        : DefWindowProcW(window, message, wParam, lParam);
+}
+
+void RemoveWindowHook() noexcept {
+    if (SubclassedWindow == nullptr) return;
+    if (IsWindow(SubclassedWindow)) {
+        const auto current = GetWindowLongPtrW(SubclassedWindow, GWLP_WNDPROC);
+        if (current == reinterpret_cast<LONG_PTR>(&BuffWindowProc)) {
+            (void)SetWindowLongPtrW(SubclassedWindow, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(PreviousWndProc));
+        } else if (Context != nullptr) {
+            // Someone subclassed the window after us: our procedure stays in
+            // their chain and keeps forwarding.
+            Context->LogWarn("Buff HUD: game window procedure changed after ours; left in place.");
+            SubclassedWindow = nullptr;
+            return;
+        }
+    }
+    SubclassedWindow = nullptr;
+    PreviousWndProc = nullptr;
+}
+
+// Subclasses the game window once it exists (again after it is recreated).
+void InstallWindowHook() noexcept {
+    if (NativeSetXFn == nullptr || NativeSetYFn == nullptr) return;
+    HWND window = GameWindow();
+    if (window == nullptr || window == SubclassedWindow) return;
+    RemoveWindowHook();
+    PreviousWndProc = reinterpret_cast<WNDPROC>(GetWindowLongPtrW(window, GWLP_WNDPROC));
+    SetLastError(0);
+    const auto previous = SetWindowLongPtrW(window, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(&BuffWindowProc));
+    if (previous == 0 && GetLastError() != 0) {
+        PreviousWndProc = nullptr;
+        if (Context != nullptr) Context->LogWarn("Buff HUD: cannot subclass the game window; Ctrl+drag is off.");
+        return;
+    }
+    PreviousWndProc = reinterpret_cast<WNDPROC>(previous);
+    SubclassedWindow = window;
+    if (Context != nullptr) Context->LogInfo("Buff HUD: Left Ctrl + drag on the icons moves the buff and debuff groups.");
 }
 
 void QueuePoll() noexcept;
@@ -1600,10 +2114,11 @@ void OpenPanel() noexcept {
 }
 
 void ClosePanel() noexcept {
-    ClearHoverOverlay();
     if (IsResolvedPanelLive()) {
+        HideHoverName();
         RestoreQualifiedCountdownBuffers();
         RestoreQualifiedTooltipBuffers();
+        RestoreHoverNameBuffer();
     }
     if (Context != nullptr && Panels != nullptr
         && RegisteredPanel != D2RL::Panels::InvalidHandle) {
@@ -1711,15 +2226,44 @@ void PrintStatus(const D2RL::PluginContext* context) noexcept {
     if (context == nullptr) return;
     const auto snapshot = Core::BuffDisplays().Snapshot();
     const auto icons = Internal::SkillIconStatus();
-    HoverOverlayState hover{};
-    {
-        std::lock_guard lock(HoverOverlayMutex);
-        hover = HoverOverlay;
+    std::size_t shownBuffs = 0;
+    std::size_t shownDebuffs = 0;
+    std::string debuffNames;
+    for (std::size_t i = 0; i < SlotCount; ++i) {
+        if (!RenderStates[i].visible) continue;
+        if (i < BuffSlotCount) {
+            ++shownBuffs;
+            continue;
+        }
+        ++shownDebuffs;
+        if (!debuffNames.empty()) debuffNames += '|';
+        debuffNames += RenderStates[i].hoverText.data();
     }
-    char line[640]{};
+    HitSnapshot hits{};
+    std::array<std::array<Core::PanelPosition, GroupCount>, ModeCount> saved{};
+    bool dragging{};
+    {
+        std::lock_guard lock(PositionMutex);
+        hits = Hits;
+        saved = SavedPositions;
+        dragging = Drag.active;
+    }
+    char positions[256]{};
+    char bx[16]{}, by[16]{}, dx[16]{}, dy[16]{}, lbx[16]{}, lby[16]{}, ldx[16]{}, ldy[16]{};
+    FormatPosition(saved[1][BuffGroup], bx, by);
+    FormatPosition(saved[1][DebuffGroup], dx, dy);
+    FormatPosition(saved[0][BuffGroup], lbx, lby);
+    FormatPosition(saved[0][DebuffGroup], ldx, ldy);
+    std::snprintf(positions, sizeof(positions),
+        "saved(hd buffs=%s,%s debuffs=%s,%s legacy buffs=%s,%s debuffs=%s,%s) grids(buffs=%.0f,%.0f debuffs=%.0f,%.0f on %.0fx%.0f %s)",
+        bx, by, dx, dy, lbx, lby, ldx, ldy,
+        hits.groups[BuffGroup].left, hits.groups[BuffGroup].top,
+        hits.groups[DebuffGroup].left, hits.groups[DebuffGroup].top,
+        hits.frame.width, hits.frame.height, hits.frame.hd ? "hd" : "legacy");
+    char line[1280]{};
     std::snprintf(line, sizeof(line),
-        "Buff HUD 1.1.0: displayed=%zu/%zu session=%llu frame=%u panel=%s hideWithPanels=%s hiddenBy=%s companion=enabled skillIcons=%s skillNames=%s tableRevision=%llu hoverLabels=click-through hover=\"%s\".",
-        snapshot.count, SlotCount,
+        "Buff HUD 1.2.0: displayed=%zu shown=%zu/%zu debuffs=%zu/%zu session=%llu frame=%u panel=%s hideWithPanels=%s hiddenBy=%s companion=enabled skillIcons=%s skillNames=%s tableRevision=%llu hoverLabel=%s hover=\"%s\" debuffNames=\"%s\" %s drag=%s drags=%llu.",
+        snapshot.count, shownBuffs, BuffSlotCount, shownDebuffs, DebuffSlotCount,
         static_cast<unsigned long long>(snapshot.sessionGeneration),
         snapshot.currentGameFrame,
         RegisteredPanel != D2RL::Panels::InvalidHandle ? "registered" : "missing",
@@ -1728,7 +2272,12 @@ void PrintStatus(const D2RL::PluginContext* context) noexcept {
         icons.ready ? "ready" : "not-qualified",
         icons.namesReady ? "ready" : "not-qualified",
         static_cast<unsigned long long>(icons.tableRevision),
-        hover.visible ? hover.text.data() : "");
+        NativeHoverName != nullptr ? "native" : "missing",
+        HoverNameShown ? HoverNameText.data() : "",
+        debuffNames.c_str(),
+        positions,
+        dragging ? "active" : SubclassedWindow != nullptr ? "ready" : "off",
+        static_cast<unsigned long long>(DragsCompleted.load(std::memory_order_relaxed)));
     context->WriteConsoleMessage(line);
     // The console panel is not always open (or not readable): the log keeps it.
     context->LogInfo(line);
@@ -1782,33 +2331,24 @@ D2RL::ConsoleCommandResult __cdecl BuffCommand(
     if (trimmed.substr(0, 6) == "panels" && (trimmed.size() == 6 || trimmed[6] == ' ' || trimmed[6] == '\t')) {
         PrintPanels(command->plugin, trimmed.substr(6)); return D2RL::ConsoleCommandResult::Handled;
     }
-    command->plugin->WriteConsoleMessage("Usage: buff-panel [status | panels [Name ...]]");
+    if (trimmed == "reset" || trimmed == "reset buffs" || trimmed == "reset debuffs") {
+        const bool buffs = trimmed != "reset debuffs";
+        const bool debuffs = trimmed != "reset buffs";
+        {
+            std::lock_guard lock(PositionMutex);
+            for (auto& mode : SavedPositions) {
+                if (buffs) mode[BuffGroup] = {};
+                if (debuffs) mode[DebuffGroup] = {};
+            }
+            SaveRequested = true;
+        }
+        command->plugin->WriteConsoleMessage(buffs && debuffs
+            ? "Buff HUD: buffs and debuffs back by the globes."
+            : buffs ? "Buff HUD: buffs back by the life globe." : "Buff HUD: debuffs back by the mana globe.");
+        return D2RL::ConsoleCommandResult::Handled;
+    }
+    command->plugin->WriteConsoleMessage("Usage: buff-panel [status | panels [Name ...] | reset [buffs | debuffs]]");
     return D2RL::ConsoleCommandResult::InvalidArguments;
-}
-
-[[nodiscard]] bool RegisterHoverOverlay() noexcept {
-    Overlay = Core::Services().overlay;
-    if (Overlay == nullptr
-        || !D2RL::HasOverlayServiceField(Overlay, D2RL::OverlayServiceRequiredSize)) {
-        Context->LogError("Buff HUD: OverlayService unavailable/undersized; click-through hover labels require OverlayService V1.");
-        return false;
-    }
-
-    const D2RL::Overlay::CallbackRegistration registration{
-        .structSize = D2RL::Overlay::CallbackRegistrationSize,
-        .flags = 0,
-        .phase = D2RL::Overlay::Phase::AfterGameUi,
-        .priority = 0,
-        .callback = &DrawHoverOverlay,
-        .userData = nullptr,
-    };
-    if (Overlay->registerFrameCallback(Context, &registration, &HoverOverlayCallback)
-        != D2RL::Overlay::Result::Success) {
-        Context->LogError("Buff HUD: failed to register display-only hover overlay.");
-        HoverOverlayCallback = D2RL::Overlay::InvalidCallbackHandle;
-        return false;
-    }
-    return true;
 }
 
 [[nodiscard]] bool RegisterLayoutAndPanel() noexcept {
@@ -1880,6 +2420,29 @@ D2RL::ConsoleCommandResult __cdecl BuffCommand(
         Context->exeBase + Native::Contract::FindTopLevelPanelRva);
     FindChildWidgetByName = reinterpret_cast<FindChildWidgetByNameFn>(
         Context->exeBase + Native::Contract::FindChildWidgetByNameRva);
+
+    // Optional: without the native setters the buff group still works, but
+    // the debuff group, the hover label and moving stay off.
+    const bool settersMatch = Context->CheckExpectedBytes(
+            Native::Contract::WidgetSetVisibleRva,
+            Native::Contract::WidgetSetVisibleExpected.data(),
+            static_cast<std::uint32_t>(Native::Contract::WidgetSetVisibleExpected.size()))
+        && Context->CheckExpectedBytes(
+            Native::Contract::WidgetSetXRva,
+            Native::Contract::WidgetSetXExpected.data(),
+            static_cast<std::uint32_t>(Native::Contract::WidgetSetXExpected.size()))
+        && Context->CheckExpectedBytes(
+            Native::Contract::WidgetSetYRva,
+            Native::Contract::WidgetSetYExpected.data(),
+            static_cast<std::uint32_t>(Native::Contract::WidgetSetYExpected.size()));
+    if (settersMatch) {
+        NativeSetVisibleFn = reinterpret_cast<WidgetSetVisibleFn>(
+            Context->exeBase + Native::Contract::WidgetSetVisibleRva);
+        NativeSetXFn = reinterpret_cast<WidgetSetCoordinateFn>(Context->exeBase + Native::Contract::WidgetSetXRva);
+        NativeSetYFn = reinterpret_cast<WidgetSetCoordinateFn>(Context->exeBase + Native::Contract::WidgetSetYRva);
+    } else {
+        Context->LogWarn("Buff HUD: native widget setter fingerprint mismatch; debuffs, hover names and moving are off.");
+    }
     return true;
 }
 
@@ -1890,6 +2453,15 @@ bool Initialize(const D2RL::PluginContext* context, const Core::PluginConfig& co
     if (context == nullptr) return false;
     Context = context;
     HideWithPanels = config.hideWithPanels;
+    {
+        std::lock_guard lock(PositionMutex);
+        SavedPositions[0] = {config.legacyBuffs, config.legacyDebuffs};
+        SavedPositions[1] = {config.hdBuffs, config.hdDebuffs};
+        for (auto& mode : SavedPositions) {
+            if (config.resetBuffs) mode[BuffGroup] = {};
+            if (config.resetDebuffs) mode[DebuffGroup] = {};
+        }
+    }
 
     const auto& services = Core::Services();
     Panels = services.panels;
@@ -1935,11 +2507,13 @@ bool Initialize(const D2RL::PluginContext* context, const Core::PluginConfig& co
     if (!ValidateNativeUiContract()
         || !Internal::InitializeIconFrameBackend(Context)
         || !RegisterLayoutAndPanel()
-        || !RegisterHoverOverlay()
         || !RegisterLifecycle()) {
         Shutdown();
         return false;
     }
+    // reset_buffs / reset_debuffs act once: write the default spots and the
+    // reset keys back as false.
+    if (config.resetBuffs || config.resetDebuffs) SavePositions(true);
 
     if (!Context->RegisterConsoleCommand(
             "buff-panel",
@@ -1948,18 +2522,12 @@ bool Initialize(const D2RL::PluginContext* context, const Core::PluginConfig& co
         Context->LogWarn("Buff HUD: console command 'buff-panel' could not be registered.");
     }
     Context->LogInfo(
-        "Buff HUD 1.1.0 BuffHud initialized: 21 display-only slots, companion-resource layout, fixed gameplay input isolation, timer/resource rendering, and runtime skill icon/name resolution.");
+        "Buff HUD 1.2.0 BuffHud initialized: 21 buff and 14 debuff display-only slots, companion-resource layout, fixed gameplay input isolation, timer/resource rendering, and runtime skill icon/name resolution.");
     return true;
 }
 
 void Shutdown() noexcept {
-    if (Context != nullptr && Overlay != nullptr
-        && HoverOverlayCallback != D2RL::Overlay::InvalidCallbackHandle
-        && Overlay->unregisterFrameCallback != nullptr) {
-        (void)Overlay->unregisterFrameCallback(Context, HoverOverlayCallback);
-    }
-    HoverOverlayCallback = D2RL::Overlay::InvalidCallbackHandle;
-    ClearHoverOverlay();
+    RemoveWindowHook();
 
     Core::BuffDisplays().EndSession();
     Internal::ResetSkillIconCache();
@@ -1971,8 +2539,21 @@ void Shutdown() noexcept {
     // services from the loader shutdown thread.
     RestoreQualifiedCountdownBuffers();
     RestoreQualifiedTooltipBuffers();
+    RestoreHoverNameBuffer();
     InvalidateWidgetHandles();
     PollsWithoutPanel = 0;
+    VisibleFlagQualified = false;
+    EnabledFlagQualified = false;
+    NativeSetVisibleFn = nullptr;
+    NativeSetXFn = nullptr;
+    NativeSetYFn = nullptr;
+    {
+        std::lock_guard lock(PositionMutex);
+        SavedPositions = {};
+        GroupDefaults = {};
+        Drag = {};
+        SaveRequested = false;
+    }
     HidingPanel = nullptr;
 
     RegisteredPanel = D2RL::Panels::InvalidHandle;
@@ -1984,7 +2565,6 @@ void Shutdown() noexcept {
     Widgets = nullptr;
     Threads = nullptr;
     Lifecycle = nullptr;
-    Overlay = nullptr;
     Context = nullptr;
 }
 

@@ -24,7 +24,7 @@
       "name": "BuffGrid",
       "fields": {
         "rect": {
-          "x": -150,
+          "x": -816,
           "y": -515,
           "width": 780,
           "height": 300
@@ -16290,6 +16290,2837 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Widget",
+      "name": "DebuffGrid",
+      "fields": {
+        "rect": {
+          "x": 36,
+          "y": -416,
+          "width": 780,
+          "height": 201
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 1.0
+        }
+      },
+      "children": [
+        {
+          "type": "Widget",
+          "name": "DebuffSlot00",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 672,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot01",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 560,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot02",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 448,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot03",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 336,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot04",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 224,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot05",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 112,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot06",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 0,
+              "y": 105,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot07",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 672,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot08",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 560,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot09",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 448,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot10",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 336,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot11",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 224,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot12",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 112,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "Widget",
+          "name": "DebuffSlot13",
+          "fields": {
+            "visible": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "children": [
+            {
+              "type": "ButtonWidget",
+              "name": "IconAmazon",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/amazon/AmSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconSorceress",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Sorceress/SoSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconNecromancer",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Necromancer/NeSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconPaladin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/paladin/PaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconBarbarian",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Barbarian/BaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconDruid",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Druid/DrSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconAssassin",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Assassin/AsSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconWarlock",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/Warlock/WaSkillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "IconGlobal",
+              "fields": {
+                "visible": false,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 0.6
+                },
+                "filename": "Spells/SubMenu/Skillicon",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "focusOnMouseOver": false
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Frame",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1.0
+                },
+                "filename": "d2rloader/buff-panel/DebuffFrame",
+                "frame": 0
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Countdown",
+              "fields": {
+                "visible": false,
+                "text": "__BUFF_PANEL_TIMER_RESERVE_00__",
+                "fontType": "16pt",
+                "rect": {
+                  "x": -16,
+                  "y": 52,
+                  "width": 112,
+                  "height": 42
+                },
+                "style": {
+                  "pointSize": "$MediumFontSize",
+                  "fontColor": "$FontColorWhite",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "dropShadow": "$DefaultDropShadow",
+                  "options": {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "HoverName",
+      "fields": {
+        "visible": false,
+        "text": "__BUFF_PANEL_NAME_RESERVE______________________________________",
+        "fontType": "16pt",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 60
+        },
+        "style": {
+          "pointSize": "$MediumFontSize",
+          "fontColor": "$FontColorWhite",
+          "alignment": {
+            "h": "center",
+            "v": "center"
+          },
+          "dropShadow": "$DefaultDropShadow",
+          "options": {
+            "hideOverflow": true
+          }
+        }
+      }
     }
   ]
 }

@@ -30,20 +30,22 @@ assert "EnsurePanelOpen" not in sources
 assert "PanelReadyLogged" not in sources
 assert "Panels->getPanelInfo" not in sources
 assert "RenderSnapshot();\n    QueuePoll();" in sources
-assert "RegisterHoverOverlay" in sources
-assert "DrawHoverOverlay" in sources
-assert "PublishHoverOverlay" in sources
-assert "D2RL::OverlayService" in sources
-assert "Overlay->drawText" in sources
-assert "Overlay->measureText" in sources
+# Hover names are the layout's own HoverName label, drawn by the game: the
+# OverlayService frame callbacks the 1.1.0 label relied on never ran.
+assert "Overlay->drawText" not in sources
+assert "Overlay->measureText" not in sources
+assert "PublishHoverOverlay" not in sources
+assert "WriteHoverNameText" in sources
+assert "RestoreHoverNameBuffer" in sources
+# Left Ctrl + drag moves a group through the game window's own procedure.
+assert "BuffWindowProc" in sources and "CallWindowProcW" in sources
+assert "MK_CONTROL" in sources and "VK_LCONTROL" in sources
 assert "std::array<char, HoverTextBytes> hoverText" in sources
 assert "disable(slot.countdown)" in sources
 assert "disable(slot.slot)" in sources
 assert "disable(GridWidget)" in sources
 assert "disable(HudPanel)" in sources
-assert "gridRectAlreadyResolved" in sources
-assert "static_cast<double>(panelRect.width) * 0.5" in sources
-assert "static_cast<double>(panelRect.height) + static_cast<double>(gridRect.y)" in sources
+assert "anchorX * frame.width + rect.x" in sources, "grid origin is anchor * screen + local x"
 assert "QueuePoll();" in sources
 assert "set(slot.tooltip, occupied && state.tooltipVisible)" not in sources
 assert "StatListBuffMetadataBytes = 0x30" in sources
@@ -55,11 +57,11 @@ ensure = sources.split("bool EnsureTooltipQualified(", 1)[1].split("\n}\n", 1)[0
 assert "RestoreQualifiedTooltipBuffer(" not in ensure, "tooltip reserve restored into a replaced widget"
 close = sources.split("void ClosePanel() noexcept {", 1)[1].split("\n}\n", 1)[0]
 assert "IsResolvedPanelLive()" in close, "qualified buffers restored without a live-panel check"
+assert close.index("IsResolvedPanelLive()") < close.index("RestoreHoverNameBuffer()"), "hover label restored without a live-panel check"
 assert '"type": "FocusableWidget"' not in LAYOUT
-assert '"name": "HoverName"' not in LAYOUT
+assert LAYOUT.count('"name": "HoverName"') == 1, "one panel-level hover label"
 assert "__BUFF_HUD_HOVER_NAME_RESERVE" not in LAYOUT
 assert "__BUFF_HUD_HOVER_NAME_RESERVE" not in sources
-assert "WriteHoverNameText" not in sources
 assert "qualifiedHoverNameBuffer" not in sources
 assert '"fitToParent": true' in LAYOUT
 print("PASS: production runtime surface contains no known probe/debug/telemetry remnants")

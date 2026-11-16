@@ -90,3 +90,25 @@ state_id	icon_atlas	icon_frame	name_key	name	item_code
 292	global	64	mxl2012:SkillnamePaganHeart	Pagan Heart	
 297	global	48	mxl2012:SkillnameHamRadio	Hamstring	
 301	global	104	mxl2012:SkillnameCowDisguise	Cow Disguise	
+1	global	56		Frozen	
+2	necromancer	40		Poisoned	
+9	global	2		Amplify Damage	
+10	global	88	mxl2012:SkillnameRetribute	Retribute	
+11	global	70		Chilled	
+21	global	14		Stunned	
+23	global	100		Dim Vision	
+24	global	80		Slowed	
+27	global	16		Taunt	
+52	necromancer	100	mxl2012:SkillnameRustStorm	Rust Storm	
+56	global	22		Terror	
+60	global	20		Decrepify	
+61	global	8		Lower Resist	
+114	global	12		Blood Mana	
+115	global	78		Burning	
+162	global	106		Curse of the Mahasattva	
+184	global	52		Porkulator	
+257	global	38	mxl2012:SkillnameBanish	Banish	
+258	global	108	mxl2012:SkillnameDoom	Doom	
+285	global	112	mxl2012:SkillnameVindicate	Vindicate	
+288	necromancer	112	mxl2012:SkillnameNightmare	Nightmare	
+298	global	110		Dazzle	

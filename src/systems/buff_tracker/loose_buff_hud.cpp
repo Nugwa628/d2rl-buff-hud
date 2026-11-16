@@ -181,15 +181,15 @@ bool ValidateAndNormalize(std::string& bytes, std::string& error) noexcept {
                 error = "row " + std::to_string(rowNumber) + ": state/shift/enabled out of range";
                 return false;
             }
-            if (cells[2] != "timer" && cells[2] != "resource") {
-                error = "row " + std::to_string(rowNumber) + ": display_type must be timer or resource";
+            if (cells[2] != "timer" && cells[2] != "resource" && cells[2] != "debuff") {
+                error = "row " + std::to_string(rowNumber) + ": display_type must be timer, resource or debuff";
                 return false;
             }
             if (enabled != 0) {
-                if (cells[2] == "timer"
+                if ((cells[2] == "timer" || cells[2] == "debuff")
                     && (valueStat || maxStat || skillId > 4095 || shift)) {
                     error = "row " + std::to_string(rowNumber)
-                        + ": timer value_stat/max_stat/value_shift must be zero and skill_id <= 4095";
+                        + ": timer/debuff value_stat/max_stat/value_shift must be zero and skill_id <= 4095";
                     return false;
                 }
                 if (cells[2] == "resource"

@@ -46,3 +46,7 @@ __pycache__/
 # Repository-pinned D2RL compiler used by Buff Panel CI/release.
 !external/D2RLCompiler/
 !external/D2RLCompiler/D2RLCompiler.exe
+
+# Half-size legacy icon sheets: made from the game and Median XL pictures by scripts/make_companion_art.py at build time,
+# never committed.
+companion/data/global/ui/d2rloader/buff-panel/small/

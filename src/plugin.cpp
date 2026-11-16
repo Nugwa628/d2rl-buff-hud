@@ -15,14 +15,14 @@ namespace BuffPanel {
 namespace {
 
 static_assert(D2RL_PLUGIN_ABI_VERSION == 4,
-    "Buff HUD 1.1.0 requires D2RLoader PluginSDK 0.3.0 / plugin ABI 4.");
+    "Buff HUD 1.2.0 requires D2RLoader PluginSDK 0.3.0 / plugin ABI 4.");
 
 constexpr D2RL::PluginInfo Info{
     .infoSize = D2RL::PluginInfoSize,
     .abiVersion = D2RL_PLUGIN_ABI_VERSION,
     .id = "buff-panel",
     .name = "Buff HUD",
-    .version = "1.1.0",
+    .version = "1.2.0",
     .author = "MindH1ve",
     .description = "Standalone configurable D2RLoader buff HUD and countdown timers.",
     .flags = D2RL::PluginFlags::Shared | D2RL::PluginFlags::NativeHooks,
@@ -31,7 +31,7 @@ constexpr D2RL::PluginInfo Info{
 bool Started{};
 
 [[nodiscard]] Core::PluginConfig ReadPluginConfig(const D2RL::PluginContext* context) noexcept {
-    char text[1024]{};
+    char text[8192]{};
     std::uint32_t required{};
     if (!context->ReadConfig(text, sizeof(text), &required)) return {};
     return Core::ParsePluginConfig(text);
@@ -83,7 +83,7 @@ D2RL_PLUGIN_EXPORT bool __cdecl D2RLoaderLoadPlugin(
         ShutdownRuntime();
         return false;
     }
-    context->LogInfo("Buff HUD 1.1.0 loaded (D2R build 93847; PluginSDK 0.3.0/ABI 4).");
+    context->LogInfo("Buff HUD 1.2.0 loaded (D2R build 93847; PluginSDK 0.3.0/ABI 4).");
     return true;
 }
 

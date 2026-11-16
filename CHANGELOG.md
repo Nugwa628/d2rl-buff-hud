@@ -1,5 +1,19 @@
 # Buff HUD changelog
 
+## 1.2.0 — debuffs, moving the icons, hover names that show (2026-11-16)
+- Harmful timed effects now show too: curses, poison, freezing and chill, stun, burning and others, each with its own
+  icon, a red frame, its time left and its name on hover. They sit in their own group by the mana globe; buffs keep
+  theirs by the life globe. `display_type=debuff` rows in `buff-hud.txt` choose which states count.
+- Hover names show again, in HD and legacy graphics: the name is now a text line of the panel itself, drawn by the game
+  just above the icon, without colour codes. 1.1.0 found the icon under the cursor but drew the name in D2RLoader's
+  separate overlay layer, which did not show over the game.
+- Hold Left Ctrl and drag an icon to move its group (buffs and debuffs move on their own). The click does not reach the
+  game. Each group remembers its spot in `buff-panel.toml`, once for HD and once for legacy, as a share of the screen,
+  so it stays put after a restart or a resolution change and never leaves the screen. `reset_buffs` /
+  `reset_debuffs = true` or the console command `buff-panel reset [buffs | debuffs]` put a group back by its globe.
+- Legacy graphics: icons are half their old size (24 px, the companion MPQ carries half-size icon sheets); timers and
+  names use a smaller font to match. HD is unchanged.
+
 ## Unreleased — restore native buff-name hover
 - Re-enable the slot-local `FocusableWidget` for occupied buffs with resolved tooltip text so hovering an icon displays the localized buff name again.
 - Keep atlas buttons and inactive slots disabled; panel/grid containers remain enabled only to permit descendant hover hit-testing.
